@@ -86,6 +86,7 @@ Then, perform `opencode auth login` and configure the OpenRouter provider.
 
 These are other applications which are helpful for my daily tasks:
 
+- `bat`
 - `btop`
 - `eza`
 - `fd`
