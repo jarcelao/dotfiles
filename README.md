@@ -86,12 +86,16 @@ Then, perform `opencode auth login` and configure the OpenRouter provider.
 
 These are other applications which are helpful for my daily tasks:
 
-- `bashtop`
+- `btop`
+- `eza`
 - `fd`
 - `fzf`
 - `gh`
 - `lazygit`
 - `ripgrep`
+- `yazi`
+- `zellij`
+- `zoxide`
 
 ## Notes
 
