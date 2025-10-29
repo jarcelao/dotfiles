@@ -6,6 +6,10 @@ This repo contains dotfiles for the applications I use.
 
 This repo makes use of [chezmoi](https://chezmoi.io) as a dotfile manager. Refer to the [installation guide](https://www.chezmoi.io/install/) to set up this application.
 
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)"
+```
+
 ## Setup
 
 Run the following command:
@@ -28,30 +32,17 @@ For Windows, the [Windows Terminal](https://github.com/microsoft/terminal) shoul
 
 ### Shell: `fish`
 
-Install the latest version of the [`fish` shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt. The dotfiles should handle configuration for these.
+Install the latest version of the [`fish` shell](https://fishshell.com/).
+
+Also install [fisher](https://github.com/jorgebucaran/fisher) as the dotfiles includes some fish plugins.
+
+Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
 ### Editor: `nvim`
 
 Install the latest version of `nvim`. The dotfiles should automatically load [LazyVim](https://lazyvim.github.io/) plus any user configurations.
 
-Ensure you have the following LazyVim dependencies as stated in the Getting Started page:
-
-- Neovim >= 0.11.2 (needs to be built with LuaJIT)
-- Git >= 2.19.0 (for partial clones support)
-- a Nerd Font (v3.0 or greater) (optional, but needed to display some icons)
-- `lazygit` (optional)
-- `tree-sitter-cli` and a C compiler for `nvim-treesitter`. See here
-- `curl` for `blink.cmp` (completion engine)
-- for `fzf-lua` (optional)
-  - `fzf`: `fzf` (v0.25.1 or greater)
-  - live grep: `ripgrep`
-  - find files: `fd`
-- a terminal that support true color and undercurl:
-  - kitty (Linux & Macos)
-  - wezterm (Linux, Macos & Windows)
-  - alacritty (Linux, Macos & Windows)
-  - iterm2 (Macos)
-  - ghostty (Linux, Macos & Windows)
+Ensure you have installed LazyVim's dependencies as stated in the link above.
 
 ### Containers
 
