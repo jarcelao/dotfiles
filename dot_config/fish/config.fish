@@ -12,6 +12,10 @@ if status is-interactive
         alias b="batcat"
     end
 
+    if command -v yazi >/dev/null 2>&1
+        alias y="yazi"
+    end
+
     if command -v starship >/dev/null 2>&1
         starship init fish | source
     end
