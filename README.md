@@ -83,6 +83,7 @@ These are other applications which are helpful for my daily tasks:
 - `fd`
 - `fzf`
 - `gh`
+- `jq`
 - `lazygit`
 - `ripgrep`
 - `yazi`
