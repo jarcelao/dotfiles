@@ -80,6 +80,7 @@ These are other applications which are helpful for my daily tasks:
 - `bat`
 - `btop`
 - `eza`
+- `fastfetch`
 - `fd`
 - `fzf`
 - `gh`
