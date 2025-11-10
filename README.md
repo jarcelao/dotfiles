@@ -53,26 +53,6 @@ For container management, I use the following:
 - [`lazydocker`](https://github.com/jesseduffield/lazydocker)
 - [`k9s`](https://k9scli.io/)
 
-### Languages
-
-The primary languages I use are Python and Javascript. Thus, I use the following tools:
-
-- [`uv`](https://docs.astral.sh/uv/)
-- [`bun`](https://bun.sh)
-  - `node` is also okay
-
-I prefer per-language tooling over generic environment managers (e.g., `asdf`, `mise`).
-
-### AI CLI: `opencode`
-
-Install the latest version of [`opencode`](https://opencode.ai/) with the following command, assuming `bun` is installed:
-
-```bash
-bun add -g opencode-ai
-```
-
-Then, perform `opencode auth login` and configure the OpenRouter provider.
-
 ### Other Utilities
 
 These are other applications which are helpful for my daily tasks:
