@@ -30,13 +30,6 @@ if command -v nvim >/dev/null 2>&1
     alias n="nvim"
 end
 
-if test -d "$HOME/.bun"
-    set --export BUN_INSTALL "$HOME/.bun"
-    if test -d "$BUN_INSTALL/bin"
-        set --export PATH "$BUN_INSTALL/bin" $PATH
-    end
-end
-
 if command -v zoxide >/dev/null 2>&1
     zoxide init fish | source
 end
