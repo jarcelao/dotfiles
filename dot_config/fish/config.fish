@@ -19,6 +19,10 @@ if status is-interactive
     if command -v starship >/dev/null 2>&1
         starship init fish | source
     end
+
+    if command -v zoxide >/dev/null 2>&1
+        zoxide init fish | source
+    end
 end
 
 if test -d "$HOME/.local/bin"
@@ -28,8 +32,4 @@ end
 if command -v nvim >/dev/null 2>&1
     set -gx EDITOR nvim
     alias n="nvim"
-end
-
-if command -v zoxide >/dev/null 2>&1
-    zoxide init fish | source
 end
