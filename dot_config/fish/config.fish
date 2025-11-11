@@ -12,16 +12,21 @@ if status is-interactive
         alias b="batcat"
     end
 
-    if command -v yazi >/dev/null 2>&1
-        alias y="yazi"
-    end
-
     if command -v starship >/dev/null 2>&1
         starship init fish | source
     end
 
     if command -v zoxide >/dev/null 2>&1
         zoxide init fish | source
+    end
+
+    function y
+        set tmp (mktemp -t "yazi-cwd.XXXXXX")
+        yazi $argv --cwd-file="$tmp"
+        if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+            builtin cd -- "$cwd"
+        end
+        rm -f -- "$tmp"
     end
 end
 
