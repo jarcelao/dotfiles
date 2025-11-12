@@ -68,7 +68,6 @@ These are other applications which are helpful for my daily tasks:
 - `lazygit`
 - `ripgrep`
 - `yazi`
-- `zellij`
 - `zoxide`
 
 ## Notes
