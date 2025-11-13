@@ -24,12 +24,6 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing the following applications depends on the OS and package manager you are using.
 
-### Terminal Emulator: `ghostty`
-
-Install the latest version of [`ghostty`](https://ghostty.org/). The dotfiles should configure `ghostty`, assuming all prerequisites such as fonts are installed.
-
-For Windows, the [Windows Terminal](https://github.com/microsoft/terminal) should do. However, configuration can only be done manually.
-
 ### Shell: `fish`
 
 Install the latest version of the [`fish` shell](https://fishshell.com/).
