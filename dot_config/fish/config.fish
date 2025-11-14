@@ -38,3 +38,7 @@ if command -v nvim >/dev/null 2>&1
     set -gx EDITOR nvim
     alias n="nvim"
 end
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+set --export --prepend PATH "/Users/jerichoarcelao/.rd/bin"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
