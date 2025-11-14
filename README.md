@@ -24,6 +24,14 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing the following applications depends on the OS and package manager you are using.
 
+### Emulator
+
+Installing and configuring these is an OS-dependent process, so I opted to exclude their dotfiles from this repo. However, as a general guideline on aesthetics, see the [Notes](#notes) section.
+
+- **Windows**: [Windows Terminal](https://github.com/microsoft/terminal)
+- **MacOS**: [iTerm2](https://iterm2.com/)
+- **Linux**: Use the default bundled with the distro / DE (i.e., GNOME Terminal, Konsole, etc.)
+
 ### Shell: `fish`
 
 Install the latest version of the [`fish` shell](https://fishshell.com/).
