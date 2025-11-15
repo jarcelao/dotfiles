@@ -15,30 +15,18 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 Run the following command:
 
 ```bash
-chezmoi init --apply https://github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi init --apply https://github.com/jarcelao/dotfiles.git
 ```
 
 For more details, see the [quick start guide](https://www.chezmoi.io/quick-start/)
 
-## Applications
+## Terminal Applications
 
-Installing the following applications depends on the OS and package manager you are using.
-
-### Emulator
-
-Installing and configuring these is an OS-dependent process, so I opted to exclude their dotfiles from this repo. However, as a general guideline on aesthetics, see the [Notes](#notes) section.
-
-- **Windows**: [Windows Terminal](https://github.com/microsoft/terminal)
-- **MacOS**: [iTerm2](https://iterm2.com/)
-- **Linux**: Use the default bundled with the distro / DE (i.e., GNOME Terminal, Konsole, etc.)
+Installing these applications depends on the OS and package manager. However, as a general guidance, I prefer using [`brew`](https://brew.sh) to manage terminal packages.
 
 ### Shell: `fish`
 
-Install the latest version of the [`fish` shell](https://fishshell.com/).
-
-Also install [fisher](https://github.com/jorgebucaran/fisher) as the dotfiles includes some fish plugins.
-
-Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
+Install the latest version of the [`fish` shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
 ### Editor: `nvim`
 
@@ -46,18 +34,9 @@ Install the latest version of `nvim`. The dotfiles should automatically load [La
 
 Ensure you have installed LazyVim's dependencies as stated in the link above.
 
-### Containers
+### Terminal Utilities
 
-Install [Rancher Desktop](https://rancherdesktop.io/), which should enable the use of `docker` along with K8S via [`k3s`](https://k3s.io/).
-
-For container management, I use the following:
-
-- [`lazydocker`](https://github.com/jesseduffield/lazydocker)
-- [`k9s`](https://k9scli.io/)
-
-### Other Utilities
-
-These are other applications which are helpful for my daily tasks:
+These are other utilities which are helpful for my daily tasks:
 
 - `bat`
 - `btop`
@@ -74,5 +53,6 @@ These are other applications which are helpful for my daily tasks:
 
 ## Notes
 
-- My preferred [Nerd Font](https://www.nerdfonts.com/) is Jetbrains Mono.
-- My preferred color scheme is [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin).
+For terminal emulators:
+  - My preferred [Nerd Font](https://www.nerdfonts.com/) is Jetbrains Mono.
+  - My preferred color scheme is [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin).
