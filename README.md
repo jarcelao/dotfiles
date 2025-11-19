@@ -44,7 +44,6 @@ These are other utilities which are helpful for my daily tasks:
 - `fastfetch`
 - `fd`
 - `fzf`
-- `gh`
 - `jq`
 - `lazygit`
 - `ripgrep`
