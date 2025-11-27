@@ -47,6 +47,7 @@ These are other utilities which are helpful for my daily tasks:
 - `jq`
 - `lazygit`
 - `ripgrep`
+- `sevenzip`
 - `yazi`
 - `zoxide`
 
