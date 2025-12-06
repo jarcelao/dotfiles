@@ -28,11 +28,9 @@ Installing these applications depends on the OS and package manager. However, as
 
 Install the latest version of the [`fish` shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
-### Editor: `nvim`
+### Editor: `hx`
 
-Install the latest version of `nvim`. The dotfiles should automatically load [LazyVim](https://lazyvim.github.io/) plus any user configurations.
-
-Ensure you have installed LazyVim's dependencies as stated in the link above.
+Install the latest version of [`helix`](https://helix-editor.com/).
 
 ### Terminal Utilities
 
