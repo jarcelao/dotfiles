@@ -34,7 +34,7 @@ if test -d "$HOME/.local/bin"
     fish_add_path "$HOME/.local/bin"
 end
 
-if command -v nvim >/dev/null 2>&1
-    set -gx EDITOR nvim
-    alias n="nvim"
+if command -v hx >/dev/null 2>&1
+    set -gx EDITOR hx
+    alias h="hx"
 end
