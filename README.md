@@ -20,7 +20,13 @@ chezmoi init --apply https://github.com/jarcelao/dotfiles.git
 
 For more details, see the [quick start guide](https://www.chezmoi.io/quick-start/)
 
-## Terminal Applications
+## GUI Applications
+
+### Terminal Emulator: `ghostty`
+
+Install the latest version of the [`ghostty` emulator](https://ghostty.org/).
+
+## CLI/TUI Applications
 
 Installing these applications depends on the OS and package manager. However, as a general guidance, I prefer using [`brew`](https://brew.sh) to manage terminal packages.
 
