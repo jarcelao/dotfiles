@@ -45,13 +45,11 @@ These are other utilities which are helpful for my daily tasks:
 - `bat`
 - `btop`
 - `eza`
-- `fastfetch`
 - `fd`
 - `fzf`
 - `jq`
 - `lazygit`
 - `ripgrep`
-- `sevenzip`
 - `yazi`
 - `zoxide`
 
