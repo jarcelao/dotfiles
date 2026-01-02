@@ -44,6 +44,7 @@ These are other utilities which are helpful for my daily tasks:
 
 - `bat`
 - `btop`
+- `dua-cli`
 - `eza`
 - `fd`
 - `fzf`
