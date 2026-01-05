@@ -26,6 +26,10 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Install the latest version of the [`ghostty` emulator](https://ghostty.org/).
 
+### Editor: `zed`
+
+Install the latest version of [`zed`](https://zed.dev/).
+
 ## CLI/TUI Applications
 
 Installing these applications depends on the OS and package manager. However, as a general guidance, I prefer using [`brew`](https://brew.sh) to manage terminal packages.
@@ -33,10 +37,6 @@ Installing these applications depends on the OS and package manager. However, as
 ### Shell: `fish`
 
 Install the latest version of the [`fish` shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
-
-### Editor: `hx`
-
-Install the latest version of [`helix`](https://helix-editor.com/).
 
 ### Terminal Utilities
 
