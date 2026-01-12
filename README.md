@@ -43,7 +43,6 @@ Install the latest version of the [`fish` shell](https://fishshell.com/). Afterw
 These are other utilities which are helpful for my daily tasks:
 
 - `bat`
-- `btop`
 - `dua-cli`
 - `eza`
 - `fd`
