@@ -20,10 +20,6 @@ if status is-interactive
         zoxide init fish | source
     end
 
-    if command -v zed >/dev/null 2>&1
-        set -gx EDITOR zed
-    end
-
     function y
         set tmp (mktemp -t "yazi-cwd.XXXXXX")
         yazi $argv --cwd-file="$tmp"
@@ -37,4 +33,3 @@ end
 if test -d "$HOME/.local/bin"
     fish_add_path -g "$HOME/.local/bin"
 end
-
