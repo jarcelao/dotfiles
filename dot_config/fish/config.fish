@@ -20,6 +20,10 @@ if status is-interactive
         zoxide init fish | source
     end
 
+    if command -v vim >/dev/null 2>&1
+        alias v="vim"
+    end
+
     function y
         set tmp (mktemp -t "yazi-cwd.XXXXXX")
         yazi $argv --cwd-file="$tmp"
