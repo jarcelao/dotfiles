@@ -50,11 +50,10 @@
 
 theme = "Catppuccin Macchiato"
 font-family = "JetBrainsMono Nerd Font"
-background-blur = true
+background-opacity = 0.95
 {{ if eq .chezmoi.os "linux" }}
-background-opacity = 0.5
 command = "fish"
 {{ end }}
 {{ if eq .chezmoi.os "darwin" }}
-background-opacity = 0.95
+background-blur = true
 {{ end }}
