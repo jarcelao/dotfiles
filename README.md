@@ -38,6 +38,10 @@ Installing these applications depends on the OS and package manager. However, as
 
 Install the latest version of the [`fish` shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
+### Editor: `vim`
+
+Most likely, `vim` will already be available on whatever machine these dotfiles are installed on. This is meant to complement `zed` in use cases where lightweight text editing is sufficient.
+
 ### Terminal Utilities
 
 These are other utilities which are helpful for my daily tasks:
