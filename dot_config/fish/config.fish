@@ -22,6 +22,7 @@ if status is-interactive
 
     if command -v vim >/dev/null 2>&1
         alias v="vim"
+        set -gx EDITOR vim
     end
 
     function y
