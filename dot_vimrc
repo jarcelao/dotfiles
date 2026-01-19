@@ -10,6 +10,7 @@ set relativenumber
 set termguicolors
 set statusline=%f\ %y\ %m\ %r\ %=\ %l:%c\ (%p%%)
 set laststatus=2
+colorscheme catppuccin_macchiato
 
 " indentation
 set expandtab
