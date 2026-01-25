@@ -66,12 +66,14 @@ These are other utilities which are helpful for my daily tasks:
   
 ### Docker & Kubernetes
   - Use [Rancher Desktop](https://rancherdesktop.io/) whenever it's available. It already includes all the essentials to run Docker and a single-node Kubernetes cluster.
+  
+### Python
+  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface. It provides package management, version management, global tools, etc. out of the box.
+    - When developing one-off Python scripts, I prefer using `uv run --no-project` over the system Python package.
+    - For commit hooks, I prefer using [prek](https://prek.j178.dev/) over `pre-commit`
 
-### Programming Languages
-  - I mostly code in Python and JavaScript, so these two programs provide the best tooling to manage them:
-    - [uv](https://github.com/astral-sh/uv) for Python
-    - [bun](https://bun.sh/) for JavaScript
-  - If a terminal utility can be installed via the above (e.g., `uv tool install prek`), prefer using those. Otherwise, continue using `brew`.
+### JavaScript
+  - Whenever possible, I prefer [bun](https://bun.sh) as my JavaScript runtime. It provides a bunch of tooling and has overall better DX.
 
 ### AI Coding Agent
   - [Amp](http://ampcode.com/home) provides a best-in-class terminal agent experience, and its free tier is more than enough for my use cases.
