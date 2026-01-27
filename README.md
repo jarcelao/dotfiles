@@ -32,15 +32,21 @@ Install the latest version of the [zed editor](https://zed.dev/).
 
 ## CLI/TUI Applications
 
-Installing these applications depends on the OS and package manager. However, as a general guidance, I prefer using [brew](https://brew.sh) to manage terminal packages.
+Installing these applications depends on the OS and package manager. However, I tend to use [brew](https://brew.sh) to manage terminal packages.
 
 ### Shell: `fish`
 
 Install the latest version of the [fish shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
+[fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
+
 ### Editor: `vim`
 
 Most likely, `vim` will already be available on whatever machine these dotfiles are installed on. This is meant to complement `zed` in use cases where lightweight text editing is sufficient.
+
+### Version Control: `jj`
+
+[Jujutsu](https://www.jj-vcs.dev/latest/) offers a more streamlined workflow while still being compatible with Git.
 
 ### Terminal Utilities
 
@@ -54,6 +60,9 @@ These are other utilities which are helpful for my daily tasks:
 - `fzf`
 - `jq`
 - `jj`
+- `lazygit`
+- `lazydocker`
+- `k9s`
 - `ripgrep`
 - `yazi`
 - `zoxide`
@@ -61,19 +70,19 @@ These are other utilities which are helpful for my daily tasks:
 ## Notes
 
 ### Visuals
-  - My preferred [Nerd Font](https://www.nerdfonts.com/) is Jetbrains Mono.
+  - My preferred [Nerd Font](https://www.nerdfonts.com/) is JetBrains Mono.
   - My preferred color scheme is [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin).
   
 ### Docker & Kubernetes
-  - Use [Rancher Desktop](https://rancherdesktop.io/) whenever it's available. It already includes all the essentials to run Docker and a single-node Kubernetes cluster.
+  - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
+  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/) together with [minikube](https://minikube.sigs.k8s.io/). 
   
 ### Python
-  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface. It provides package management, version management, global tools, etc. out of the box.
-    - When developing one-off Python scripts, I prefer using `uv run --no-project` over the system Python package.
-    - For commit hooks, I prefer using [prek](https://prek.j178.dev/) over `pre-commit`
+  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
 
 ### JavaScript
-  - Whenever possible, I prefer [bun](https://bun.sh) as my JavaScript runtime. It provides a bunch of tooling and has overall better DX.
+  - Whenever possible, I use [bun](https://bun.sh) as my JavaScript runtime.
+  - Otherwise, I use the latest available Node LTS release.
 
 ### AI Coding Agent
   - [Amp](http://ampcode.com/home) provides a best-in-class terminal agent experience, and its free tier is more than enough for my use cases.
