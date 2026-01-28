@@ -46,7 +46,7 @@ Most likely, `vim` will already be available on whatever machine these dotfiles 
 
 ### Version Control: `jj`
 
-[Jujutsu](https://www.jj-vcs.dev/latest/) offers a more streamlined workflow while still being compatible with Git.
+[Jujutsu](https://www.jj-vcs.dev/latest/) offers a more streamlined workflow while still being compatible with Git, and [jjui](https://github.com/idursun/jjui) offers a nice TUI to match. If `jj` is not usable for a repo (e.g., lacking force push permissions), [lazygit](https://github.com/jesseduffield/lazygit) offers a similar intuitive TUI.
 
 ### Terminal Utilities
 
@@ -59,10 +59,6 @@ These are other utilities which are helpful for my daily tasks:
 - `fd`
 - `fzf`
 - `jq`
-- `jj`
-- `lazygit`
-- `lazydocker`
-- `k9s`
 - `ripgrep`
 - `yazi`
 - `zoxide`
@@ -75,7 +71,8 @@ These are other utilities which are helpful for my daily tasks:
   
 ### Docker & Kubernetes
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
-  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/) together with [minikube](https://minikube.sigs.k8s.io/). 
+  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/) together with [minikube](https://minikube.sigs.k8s.io/).
+  - Regardless of host, I pair together [lazydocker](https://github.com/jesseduffield/lazydocker) and [k9s](https://github.com/derailed/k9s) to manage my containers.
   
 ### Python
   - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
