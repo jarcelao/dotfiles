@@ -20,29 +20,19 @@ chezmoi init --apply https://github.com/jarcelao/dotfiles.git
 
 For more details, see the [quick start guide](https://www.chezmoi.io/quick-start/)
 
-## GUI Applications
+## Applications
+
+Installing these applications depends on the OS and package manager. However, I tend to use [brew](https://brew.sh) to manage terminal packages.
 
 ### Terminal Emulator: `ghostty`
 
 Install the latest version of the [ghostty emulator](https://ghostty.org/).
-
-### Editor: `zed`
-
-Install the latest version of the [zed editor](https://zed.dev/).
-
-## CLI/TUI Applications
-
-Installing these applications depends on the OS and package manager. However, I tend to use [brew](https://brew.sh) to manage terminal packages.
 
 ### Shell: `fish`
 
 Install the latest version of the [fish shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
 [fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
-
-### Editor: `vim`
-
-Most likely, `vim` will already be available on whatever machine these dotfiles are installed on. This is meant to complement `zed` in use cases where lightweight text editing is sufficient.
 
 ### Version Control: `jj`
 
