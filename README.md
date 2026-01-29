@@ -77,9 +77,5 @@ These are other utilities which are helpful for my daily tasks:
 ### Python
   - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
 
-### JavaScript
-  - Whenever possible, I use [bun](https://bun.sh) as my JavaScript runtime.
-  - Otherwise, I use the latest available Node LTS release.
-
 ### AI Coding Agent
   - [Amp](http://ampcode.com/home) provides a best-in-class terminal agent experience, and its free tier is more than enough for my use cases.
