@@ -34,6 +34,12 @@ Install the latest version of the [fish shell](https://fishshell.com/). Afterwar
 
 [fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
 
+### Editor: `neovim`
+
+Install the latest version of the [neovim editor](https://neovim.io/). 
+
+This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
+
 ### Version Control: `jj`
 
 [Jujutsu](https://www.jj-vcs.dev/latest/) offers a more streamlined workflow while still being compatible with Git, and [jjui](https://github.com/idursun/jjui) offers a nice TUI to match. If `jj` is not usable for a repo (e.g., lacking force push permissions), [lazygit](https://github.com/jesseduffield/lazygit) offers a similar intuitive TUI.

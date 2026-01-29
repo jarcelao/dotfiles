@@ -34,4 +34,9 @@ if test -d "$HOME/.local/bin"
     fish_add_path -g "$HOME/.local/bin"
 end
 
-set -gx XDG_CONFIG_HOME "~/.config"
+if command -v nvim >/dev/null 2>&1
+    alias n="nvim"
+    set -gx EDITOR "nvim"
+end
+
+set -gx XDG_CONFIG_HOME "$HOME/.config"
