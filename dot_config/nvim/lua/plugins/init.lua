@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -12,6 +12,22 @@ return {
       require "configs.lspconfig"
     end,
   },
+
+  -- {
+  --   "tpope/vim-fugitive",
+  --   cmd = {
+  --     "Git",
+  --     "Gedit",
+  --     "Gsplit",
+  --     "Gdiffsplit",
+  --     "Gread",
+  --     "Gwrite",
+  --     "Ggrep",
+  --     "GMove",
+  --     "GDelete",
+  --     "GBrowse"
+  --   },
+  -- }
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
