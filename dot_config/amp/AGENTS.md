@@ -1,0 +1,7 @@
+- Use `uv` whenever running Python. Do not use the system Python installation.
+- For repeatable edits (e.g., renaming symbols), prefer Bash or Python scripts over your edit tools.
+- Do not write anything to /tmp
+    - For these use cases, write to the workspace root instead.
+- The following CLI tools are available at your disposal:
+    - `jq`
+    - `rg`
