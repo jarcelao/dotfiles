@@ -27,21 +27,16 @@ return {
     },
   },
 
-  -- {
-  --   "tpope/vim-fugitive",
-  --   cmd = {
-  --     "Git",
-  --     "Gedit",
-  --     "Gsplit",
-  --     "Gdiffsplit",
-  --     "Gread",
-  --     "Gwrite",
-  --     "Ggrep",
-  --     "GMove",
-  --     "GDelete",
-  --     "GBrowse"
-  --   },
-  -- }
+  {
+    "folke/which-key.nvim",
+    lazy = false,
+    opts = function()
+      dofile(vim.g.base46_cache .. "whichkey")
+      return {
+        delay = 0,
+      }
+    end,
+  }
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
