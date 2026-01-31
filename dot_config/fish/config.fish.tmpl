@@ -38,5 +38,10 @@ if command -v nvim >/dev/null 2>&1
     alias n="nvim"
     set -gx EDITOR "nvim"
 end
-
+{{ if eq .chezmoi.os "darwin" }}
 set -gx XDG_CONFIG_HOME "$HOME/.config"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+set --export --prepend PATH "/Users/jerichoarcelao/.rd/bin"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+{{ end }}
