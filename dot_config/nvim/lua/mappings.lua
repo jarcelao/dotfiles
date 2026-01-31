@@ -55,9 +55,9 @@ if require("nvconfig").ui.tabufline.enabled then
     require("nvchad.tabufline").prev()
   end, { desc = "buffer goto prev" })
 
-  -- map("n", "<leader>x", function()
-  --   require("nvchad.tabufline").close_buffer()
-  -- end, { desc = "buffer close" })
+  map("n", "<leader>bd", function()
+    require("nvchad.tabufline").close_buffer()
+  end, { desc = "buffer close" })
 end
 
 -- ===== which-key mappings =====
@@ -65,57 +65,8 @@ end
 require("which-key").add {
   { "<leader>b", group = "Buffer" },
   { "<leader>bn", "<cmd>enew<CR>", desc = "buffer new" },
-  { "<leader>bd", "<cmd>bdelete<CR>", desc = "buffer delete" },
   { "<leader>b[", "<cmd>bprevious<CR>", desc = "buffer previous" },
   { "<leader>b]", "<cmd>bnext<CR>", desc = "buffer next" },
-
-  { "<leader>d", group = "Diagnostics" },
-  {
-    "<leader>dl",
-    function()
-      vim.diagnostic.setloclist()
-    end,
-    desc = "diagnostics loclist",
-  },
-  {
-    "<leader>dn",
-    function()
-      vim.diagnostic.goto_next()
-    end,
-    desc = "next diagnostic",
-  },
-  {
-    "<leader>dp",
-    function()
-      vim.diagnostic.goto_prev()
-    end,
-    desc = "previous diagnostic",
-  },
-  {
-    "<leader>df",
-    function()
-      vim.diagnostic.open_float()
-    end,
-    desc = "diagnostic float",
-  },
-
-  { "<leader>e", group = "Explorer" },
-  { "<leader>et", "<cmd>NvimTreeToggle<CR>", desc = "explorer toggle" },
-  { "<leader>ef", "<cmd>NvimTreeFocus<CR>", desc = "explorer focus" },
-
-  { "<leader>f", group = "Find" },
-  { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "find files" },
-  { "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>", desc = "find all files" },
-  { "<leader>fw", "<cmd>Telescope live_grep<CR>", desc = "live grep" },
-  { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "find buffers" },
-  { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "help tags" },
-  { "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "find oldfiles" },
-  { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "find in buffer" },
-
-  { "<leader>g", group = "Git" },
-  { "<leader>gl", "<cmd>LazyGit<CR>", desc = "lazygit" },
-  { "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "git status" },
-  { "<leader>gc", "<cmd>Telescope git_commits<CR>", desc = "git commits" },
 
   { "<leader>c", group = "Code" },
   {
@@ -154,14 +105,102 @@ require("which-key").add {
     desc = "hover",
   },
   {
-    "<leader>cm",
+    "<leader>cf",
     function()
       require("conform").format { lsp_fallback = true }
     end,
     desc = "format file",
   },
-  { "<leader>cs", "<cmd>Telescope lsp_document_symbols<CR>", desc = "document symbols" },
+  {
+    "<leader>cs",
+    "<cmd>Trouble symbols toggle focus=false<cr>",
+    desc = "Symbols (Trouble)",
+  },
+  {
+    "<leader>cl",
+    "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+    desc = "LSP Definitions / references / ... (Trouble)",
+  },
+  {
+    "<leader>cc",
+    function()
+      vim.lsp.buf.incoming_calls()
+    end,
+    desc = "incoming calls",
+  },
+  {
+    "<leader>ct",
+    function()
+      vim.lsp.buf.type_definition()
+    end,
+    desc = "type definition",
+  },
+  {
+    "<leader>cR",
+    function()
+      vim.lsp.buf.references()
+    end,
+    desc = "references",
+  },
+  {
+    "<leader>cD",
+    function()
+      vim.lsp.buf.declaration()
+    end,
+    desc = "declaration",
+  },
+  {
+    "<leader>cg",
+    function()
+      vim.lsp.buf.signature_help()
+    end,
+    desc = "signature help",
+  },
   { "<leader>c/", "gcc", desc = "toggle comment", remap = true },
+
+  { "<leader>e", group = "Explorer" },
+  { "<leader>et", "<cmd>NvimTreeToggle<CR>", desc = "explorer toggle" },
+  { "<leader>ef", "<cmd>NvimTreeFocus<CR>", desc = "explorer focus" },
+
+  { "<leader>f", group = "Find" },
+  { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "find files" },
+  { "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>", desc = "find all files" },
+  { "<leader>fw", "<cmd>Telescope live_grep<CR>", desc = "live grep" },
+  { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "find buffers" },
+  { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "help tags" },
+  { "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "find oldfiles" },
+  { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "find in buffer" },
+  { "<leader>fs", "<cmd>Telescope persisted<CR>", desc = "find sessions" },
+
+  { "<leader>g", group = "Git" },
+  { "<leader>gl", group = "LazyGit" },
+  { "<leader>gll", "<cmd>LazyGit<CR>", desc = "lazygit" },
+  { "<leader>glc", "<cmd>LazyGitConfig<CR>", desc = "lazygit config" },
+  { "<leader>glf", "<cmd>LazyGitCurrentFile<CR>", desc = "lazygit current file" },
+  { "<leader>glF", "<cmd>LazyGitFilter<CR>", desc = "lazygit filter" },
+  { "<leader>glC", "<cmd>LazyGitFilterCurrentFile<CR>", desc = "lazygit filter current file" },
+  { "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "git status" },
+  { "<leader>gc", "<cmd>Telescope git_commits<CR>", desc = "git commits" },
+  { "<leader>gg", "<cmd>Git<CR>", desc = "fugitive git command" },
+  { "<leader>gG", "<cmd>G<CR>", desc = "fugitive status" },
+  { "<leader>ge", "<cmd>Gedit<CR>", desc = "fugitive edit" },
+  { "<leader>gd", "<cmd>Gdiffsplit<CR>", desc = "fugitive diff split" },
+  { "<leader>gv", "<cmd>Gvdiffsplit<CR>", desc = "fugitive vertical diff" },
+  { "<leader>gr", "<cmd>Gread<CR>", desc = "fugitive read" },
+  { "<leader>gw", "<cmd>Gwrite<CR>", desc = "fugitive write" },
+  { "<leader>gm", "<cmd>GMove<CR>", desc = "fugitive move" },
+  { "<leader>gD", "<cmd>GDelete<CR>", desc = "fugitive delete" },
+  { "<leader>gB", "<cmd>Gbrowse<CR>", desc = "fugitive browse" },
+
+  { "<leader>h", group = "WhichKey" },
+  { "<leader>hK", "<cmd>WhichKey <CR>", desc = "whichkey all keymaps" },
+  {
+    "<leader>hk",
+    function()
+      vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
+    end,
+    desc = "whichkey query lookup",
+  },
 
   { "<leader>n", group = "NvChad" },
   { "<leader>nc", "<cmd>NvCheatsheet<CR>", desc = "nvchad cheatsheet" },
@@ -173,42 +212,48 @@ require("which-key").add {
     desc = "nvchad themes",
   },
 
-  { "<leader>t", group = "Terminal" },
+  { "<leader>s", group = "Shell" },
   {
-    "<leader>th",
+    "<leader>sh",
     function()
       require("nvchad.term").new { pos = "sp" }
     end,
     desc = "new horizontal term",
   },
   {
-    "<leader>tv",
+    "<leader>sv",
     function()
       require("nvchad.term").new { pos = "vsp" }
     end,
     desc = "new vertical term",
   },
   {
-    "<leader>tH",
+    "<leader>sH",
     function()
       require("nvchad.term").toggle { pos = "sp" }
     end,
     desc = "toggle horizontal term",
   },
   {
-    "<leader>tV",
+    "<leader>sV",
     function()
       require("nvchad.term").toggle { pos = "vsp" }
     end,
     desc = "toggle vertical term",
   },
   {
-    "<leader>tf",
+    "<leader>sf",
     function()
       require("nvchad.term").toggle { pos = "float" }
     end,
     desc = "toggle float term",
   },
+
+  { "<leader>t", group = "Tabs" },
+  { "<leader>tn", "<cmd>tabnew<CR>", desc = "new tab" },
+  { "<leader>tc", "<cmd>tabclose<CR>", desc = "close tab" },
+  { "<leader>t[", "<cmd>tabprevious<CR>", desc = "previous tab" },
+  { "<leader>t]", "<cmd>tabnext<CR>", desc = "next tab" },
 
   { "<leader>u", group = "UI" },
   { "<leader>un", "<cmd>set number!<CR>", desc = "toggle line numbers" },
@@ -216,19 +261,25 @@ require("which-key").add {
   { "<leader>uw", "<cmd>set wrap!<CR>", desc = "toggle wrap" },
   { "<leader>us", "<cmd>set spell!<CR>", desc = "toggle spell" },
 
-  { "<leader>w", group = "Window" },
-  { "<leader>wh", "<C-w>h", desc = "window left" },
-  { "<leader>wl", "<C-w>l", desc = "window right" },
-  { "<leader>wj", "<C-w>j", desc = "window down" },
-  { "<leader>wk", "<C-w>k", desc = "window up" },
-
-  { "<leader>h", group = "WhichKey" },
-  { "<leader>hK", "<cmd>WhichKey <CR>", desc = "whichkey all keymaps" },
+  { "<leader>x", group = "Trouble" },
   {
-    "<leader>hk",
-    function()
-      vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
-    end,
-    desc = "whichkey query lookup",
+    "<leader>xx",
+    "<cmd>Trouble diagnostics toggle<cr>",
+    desc = "Diagnostics (Trouble)",
+  },
+  {
+    "<leader>xX",
+    "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+    desc = "Buffer Diagnostics (Trouble)",
+  },
+  {
+    "<leader>xL",
+    "<cmd>Trouble loclist toggle<cr>",
+    desc = "Location List (Trouble)",
+  },
+  {
+    "<leader>xQ",
+    "<cmd>Trouble qflist toggle<cr>",
+    desc = "Quickfix List (Trouble)",
   },
 }
