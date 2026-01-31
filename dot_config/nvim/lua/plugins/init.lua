@@ -24,6 +24,18 @@ return {
   },
 
   {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    cmd = {
+      "MasonToolsInstall",
+      "MasonToolsInstallSync",
+      "MasonToolsUpdate",
+      "MasonToolsUpdateSync",
+      "MasonToolsClean"
+    },
+    ensure_installed = require "configs.mason-tool-installer", 
+  },
+
+  {
     "folke/which-key.nvim",
     lazy = false,
     opts = function()

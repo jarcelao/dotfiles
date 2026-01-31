@@ -55,9 +55,9 @@ if require("nvconfig").ui.tabufline.enabled then
     require("nvchad.tabufline").prev()
   end, { desc = "buffer goto prev" })
 
-  -- map("n", "<leader>x", function()
-  --   require("nvchad.tabufline").close_buffer()
-  -- end, { desc = "buffer close" })
+  map("n", "<leader>bd", function()
+    require("nvchad.tabufline").close_buffer()
+  end, { desc = "buffer close" })
 end
 
 -- ===== which-key mappings =====
@@ -65,9 +65,54 @@ end
 require("which-key").add {
   { "<leader>b", group = "Buffer" },
   { "<leader>bn", "<cmd>enew<CR>", desc = "buffer new" },
-  { "<leader>bd", "<cmd>bdelete<CR>", desc = "buffer delete" },
   { "<leader>b[", "<cmd>bprevious<CR>", desc = "buffer previous" },
   { "<leader>b]", "<cmd>bnext<CR>", desc = "buffer next" },
+
+  { "<leader>c", group = "Code" },
+  {
+    "<leader>ca",
+    function()
+      vim.lsp.buf.code_action()
+    end,
+    desc = "code action",
+  },
+  {
+    "<leader>cr",
+    function()
+      vim.lsp.buf.rename()
+    end,
+    desc = "rename",
+  },
+  {
+    "<leader>cd",
+    function()
+      vim.lsp.buf.definition()
+    end,
+    desc = "go to definition",
+  },
+  {
+    "<leader>ci",
+    function()
+      vim.lsp.buf.implementation()
+    end,
+    desc = "go to implementation",
+  },
+  {
+    "<leader>ch",
+    function()
+      vim.lsp.buf.hover()
+    end,
+    desc = "hover",
+  },
+  {
+    "<leader>cm",
+    function()
+      require("conform").format { lsp_fallback = true }
+    end,
+    desc = "format file",
+  },
+  { "<leader>cs", "<cmd>Telescope lsp_document_symbols<CR>", desc = "document symbols" },
+  { "<leader>c/", "gcc", desc = "toggle comment", remap = true },
 
   { "<leader>d", group = "Diagnostics" },
   {
@@ -117,51 +162,15 @@ require("which-key").add {
   { "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "git status" },
   { "<leader>gc", "<cmd>Telescope git_commits<CR>", desc = "git commits" },
 
-  { "<leader>c", group = "Code" },
+  { "<leader>h", group = "WhichKey" },
+  { "<leader>hK", "<cmd>WhichKey <CR>", desc = "whichkey all keymaps" },
   {
-    "<leader>ca",
+    "<leader>hk",
     function()
-      vim.lsp.buf.code_action()
+      vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
     end,
-    desc = "code action",
+    desc = "whichkey query lookup",
   },
-  {
-    "<leader>cr",
-    function()
-      vim.lsp.buf.rename()
-    end,
-    desc = "rename",
-  },
-  {
-    "<leader>cd",
-    function()
-      vim.lsp.buf.definition()
-    end,
-    desc = "go to definition",
-  },
-  {
-    "<leader>ci",
-    function()
-      vim.lsp.buf.implementation()
-    end,
-    desc = "go to implementation",
-  },
-  {
-    "<leader>ch",
-    function()
-      vim.lsp.buf.hover()
-    end,
-    desc = "hover",
-  },
-  {
-    "<leader>cm",
-    function()
-      require("conform").format { lsp_fallback = true }
-    end,
-    desc = "format file",
-  },
-  { "<leader>cs", "<cmd>Telescope lsp_document_symbols<CR>", desc = "document symbols" },
-  { "<leader>c/", "gcc", desc = "toggle comment", remap = true },
 
   { "<leader>n", group = "NvChad" },
   { "<leader>nc", "<cmd>NvCheatsheet<CR>", desc = "nvchad cheatsheet" },
@@ -221,14 +230,4 @@ require("which-key").add {
   { "<leader>wl", "<C-w>l", desc = "window right" },
   { "<leader>wj", "<C-w>j", desc = "window down" },
   { "<leader>wk", "<C-w>k", desc = "window up" },
-
-  { "<leader>h", group = "WhichKey" },
-  { "<leader>hK", "<cmd>WhichKey <CR>", desc = "whichkey all keymaps" },
-  {
-    "<leader>hk",
-    function()
-      vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
-    end,
-    desc = "whichkey query lookup",
-  },
 }
