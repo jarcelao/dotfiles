@@ -1,7 +1,7 @@
 local options = {
   formatters_by_ft = {
     json = { "jq" },
-    -- lua = { "stylua" },
+    lua = { "stylua" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },

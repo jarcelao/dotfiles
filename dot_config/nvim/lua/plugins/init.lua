@@ -21,9 +21,6 @@ return {
       "LazyGitFilter",
       "LazyGitFilterCurrentFile",
     },
-    keys = {
-      { "<leader>gl", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-    },
   },
 
   {
@@ -35,7 +32,7 @@ return {
         delay = 0,
       }
     end,
-  }
+  },
 
   -- These are some examples, uncomment them if you want to see them work!
 
