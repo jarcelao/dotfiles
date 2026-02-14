@@ -1,7 +1,7 @@
-- Use `uv run python` whenever running Python. Do not use the system Python installation.
-- For repeatable edits (e.g., renaming symbols), prefer Bash or Python scripts over your edit tools.
-- Do not write anything to `/tmp`
-    - For these use cases, write to a `/temp` folder from your workspace root.
-- The following CLI tools are available at your disposal:
+- DO use `uv run python` whenever running Python. 
+    - DO NOT use the system Python installation.
+- DO NOT write anything to `/tmp`
+    - DO write to a `./temp` folder.
+- DO use the following CLI tools whenever applicable:
     - `jq`
     - `rg`
