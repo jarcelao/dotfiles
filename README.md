@@ -76,4 +76,4 @@ These are other utilities which are helpful for my daily tasks:
   - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
 
 ### AI Coding Agent
-  - [Amp](http://ampcode.com/home) provides a best-in-class terminal agent experience, and its free tier is more than enough for my use cases.
+  - [opencode](https://opencode.ai) provides the best open-source TUI for coding agents in my experience.
