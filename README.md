@@ -24,9 +24,9 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing these applications depends on the OS and package manager. However, I tend to use [brew](https://brew.sh) to manage terminal packages.
 
-### Terminal Emulator: `ghostty`
+### Terminal Emulator: `wezterm`
 
-Install the latest version of the [ghostty emulator](https://ghostty.org/).
+Install the latest version of [wez's terminal emulator](https://wezterm.org/install/linux.html).
 
 ### Shell: `fish`
 
