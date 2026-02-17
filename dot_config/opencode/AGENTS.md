@@ -1,7 +1,0 @@
-- DO use `uv run python` whenever running Python. 
-    - DO NOT use the system Python installation.
-- DO NOT write anything to `/tmp`
-    - DO write to a `./temp` folder.
-- DO use the following CLI tools whenever applicable:
-    - `jq`
-    - `rg`
