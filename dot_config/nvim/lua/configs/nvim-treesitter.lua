@@ -1,8 +1,6 @@
 local opts = {
   ensure_installed = {
     "lua",
-    "vimdoc",
-    "vim",
     "python",
     "javascript",
     "typescript",
@@ -10,8 +8,9 @@ local opts = {
     "bash",
     "markdown",
     "yaml",
-    -- "html",
-    -- "css" ,
+    "fish",
+    "html",
+    "css",
   },
   highlight = {
     enable = true,
