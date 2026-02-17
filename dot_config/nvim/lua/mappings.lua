@@ -67,6 +67,53 @@ require("which-key").add {
   { "<leader>bn", "<cmd>enew<CR>", desc = "buffer new" },
   { "<leader>b[", "<cmd>bprevious<CR>", desc = "buffer previous" },
   { "<leader>b]", "<cmd>bnext<CR>", desc = "buffer next" },
+  { "<leader>bd", "<cmd>bdelete<CR>", desc = "buffer delete" },
+  { "<leader>bD", "<cmd>bdelete!<CR>", desc = "buffer force delete" },
+  { "<leader>bo", "<cmd>%bdelete|e#|bd#<CR>", desc = "buffer close others" },
+  {
+    "<leader>bp",
+    function()
+      require("nvchad.tabufline").pin_buf()
+    end,
+    desc = "buffer pin/unpin",
+  },
+  {
+    "<leader>bP",
+    function()
+      require("nvchad.tabufline").close_unpinned_bufs()
+    end,
+    desc = "buffer close unpinned",
+  },
+  {
+    "<leader>bL",
+    function()
+      require("nvchad.tabufline").closeBufs_at_direction "left"
+    end,
+    desc = "buffer close left",
+  },
+  {
+    "<leader>bR",
+    function()
+      require("nvchad.tabufline").closeBufs_at_direction "right"
+    end,
+    desc = "buffer close right",
+  },
+  {
+    "<leader>bs",
+    function()
+      require("nvchad.tabufline").move_buf(1)
+    end,
+    desc = "buffer move right",
+  },
+  {
+    "<leader>bS",
+    function()
+      require("nvchad.tabufline").move_buf(-1)
+    end,
+    desc = "buffer move left",
+  },
+  { "<leader>bf", "<cmd>buffer #<CR>", desc = "buffer alternate" },
+  { "<leader>bF", "<cmd>Telescope buffers<CR>", desc = "buffer find" },
 
   { "<leader>c", group = "Code" },
   {
@@ -166,7 +213,6 @@ require("which-key").add {
   { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "find files" },
   { "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>", desc = "find all files" },
   { "<leader>fw", "<cmd>Telescope live_grep<CR>", desc = "live grep" },
-  { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "find buffers" },
   { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "help tags" },
   { "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "find oldfiles" },
   { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "find in buffer" },
