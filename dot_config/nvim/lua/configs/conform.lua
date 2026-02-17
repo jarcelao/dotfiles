@@ -1,6 +1,6 @@
 local options = {
   formatters_by_ft = {
-    json = { "yq" },
+    json = { "jq" },
     lua = { "stylua" },
     yaml = { "yq" },
     python = { "ruff_fix" },
