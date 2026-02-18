@@ -96,6 +96,13 @@ return {
     cmd = "Trouble",
   },
 
+  {
+    "jvgrootveld/telescope-zoxide",
+    config = function ()
+      require("telescope").load_extension("zoxide")
+    end
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 }

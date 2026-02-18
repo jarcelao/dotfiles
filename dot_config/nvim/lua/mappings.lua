@@ -217,6 +217,7 @@ require("which-key").add {
   { "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "find oldfiles" },
   { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "find in buffer" },
   { "<leader>fs", "<cmd>Telescope persisted<CR>", desc = "find sessions" },
+  { "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "find zoxide" },
 
   { "<leader>g", group = "Git" },
   { "<leader>gl", group = "LazyGit" },
