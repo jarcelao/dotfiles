@@ -98,9 +98,21 @@ return {
 
   {
     "jvgrootveld/telescope-zoxide",
-    config = function ()
-      require("telescope").load_extension("zoxide")
-    end
+    config = function()
+      require("telescope").load_extension "zoxide"
+    end,
+  },
+
+  {
+    "nanotee/zoxide.vim",
+    cmd = {
+      "Z",
+      "Lz",
+      "Tz",
+      "Zi",
+      "Lzi",
+      "Tzi",
+    },
   },
 
   -- test new blink
