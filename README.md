@@ -39,7 +39,10 @@ Install the latest version of the [fish shell](https://fishshell.com/). Afterwar
 Install the latest version of the [tmux multiplexer](https://github.com/tmux/tmux).
 
 > [!NOTE]
-> Install [tpm](https://github.com/tmux-plugins/tpm) before launching `tmux`. Open `tmux`, then perform `<prefix>-I` to load the plugins.
+> Install the following before launching `tmux`:
+>   - [tpm](https://github.com/tmux-plugins/tpm)
+>   - [catppuccin](https://github.com/catppuccin/tmux)
+> Else the configuration will not load!
 
 ### Editor: `neovim`
 
