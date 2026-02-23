@@ -34,6 +34,13 @@ Install the latest version of the [fish shell](https://fishshell.com/). Afterwar
 
 [fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
 
+### Terminal Multiplexer: `tmux`
+
+Install the latest version of the [tmux multiplexer](https://github.com/tmux/tmux).
+
+> [!NOTE]
+> Install [tpm](https://github.com/tmux-plugins/tpm) before launching `tmux`. Open `tmux`, then perform `<prefix>-I` to load the plugins.
+
 ### Editor: `neovim`
 
 Install the latest version of the [neovim editor](https://neovim.io/). 
