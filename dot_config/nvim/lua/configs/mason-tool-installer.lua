@@ -5,6 +5,7 @@ local ensure_installed = {
   { "lua-language-server" },
   { "ruff" },
   { "ty" },
+  { "pgformatter" },
 }
 
 return ensure_installed

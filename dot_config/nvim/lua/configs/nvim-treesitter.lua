@@ -9,6 +9,7 @@ local opts = {
     "markdown",
     "yaml",
     "fish",
+    "sql",
     "html",
     "css",
   },

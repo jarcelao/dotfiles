@@ -4,6 +4,7 @@ local options = {
     lua = { "stylua" },
     yaml = { "yq" },
     python = { "ruff_fix" },
+    sql = { "pg_format" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
