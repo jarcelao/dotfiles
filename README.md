@@ -42,6 +42,7 @@ Install the latest version of the [tmux multiplexer](https://github.com/tmux/tmu
 > Install the following before launching `tmux`:
 >   - [tpm](https://github.com/tmux-plugins/tpm)
 >   - [catppuccin](https://github.com/catppuccin/tmux)
+>
 > Else the configuration will not load!
 
 ### Editor: `neovim`

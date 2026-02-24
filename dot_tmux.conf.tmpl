@@ -1,3 +1,6 @@
+{{ if eq .chezmoi.os "darwin"}}
+set-environment -g PATH "/opt/homebrew/bin:/bin:/usr/bin"
+{{ end }}
 run "~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux"
 
 set -g @catppuccin_flavor "macchiato"
