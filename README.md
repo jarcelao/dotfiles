@@ -63,6 +63,7 @@ These are other utilities which are helpful for my daily tasks:
 
 - `bat`
 - `bottom`
+- `direnv`
 - `dua-cli`
 - `eza`
 - `fd`
