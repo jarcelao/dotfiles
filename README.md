@@ -57,6 +57,17 @@ This repo contains a custom neovim configuration based on [nvchad](https://githu
 
 If `jj` is not usable for a repo (e.g., lacking force push permissions), [lazygit](https://github.com/jesseduffield/lazygit) offers a similar intuitive TUI.
 
+### Docker: Rancher Desktop / Docker Engine
+  - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
+  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
+  - Regardless of host, I use [lazydocker](https://github.com/jesseduffield/lazydocker) to manage my containers.
+
+### Python: `uv`
+  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
+
+### AI Coding Agent: `opencode`
+  - I use [opencode](https://opencode.ai) for my AI coding needs.
+
 ### Terminal Utilities
 
 These are other utilities which are helpful for my daily tasks:
@@ -78,11 +89,3 @@ These are other utilities which are helpful for my daily tasks:
 ### Visuals
   - My preferred [Nerd Font](https://www.nerdfonts.com/) is JetBrains Mono.
   - My preferred color scheme is [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin).
-  
-### Docker
-  - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
-  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
-  - Regardless of host, I use [lazydocker](https://github.com/jesseduffield/lazydocker) to manage my containers.
-
-### Python
-  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
