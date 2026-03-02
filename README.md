@@ -75,6 +75,7 @@ These are other utilities which are helpful for my daily tasks:
 - `fzf`
 - `jq`
 - `ripgrep`
+- `sevenzip`
 - `yazi`
 - `zoxide`
 
