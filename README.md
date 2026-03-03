@@ -51,6 +51,12 @@ Install the latest version of the [neovim editor](https://neovim.io/).
 
 This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
 
+### Git: `lazygit` + `difft`
+
+Install both [lazygit](https://github.com/jesseduffield/lazygit) and [difftastic](https://difftastic.wilfred.me.uk/).
+
+This repo includes a script that automatically sets `difftastic` as the diff viewer.
+
 ### Docker: Rancher Desktop / Docker Engine
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
   - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
