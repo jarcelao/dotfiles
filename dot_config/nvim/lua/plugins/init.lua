@@ -27,25 +27,6 @@ return {
   },
 
   {
-    "tpope/vim-fugitive",
-    cmd = {
-      "G",
-      "Git",
-      "Gedit",
-      "Gsplit",
-      "Gdiffsplit",
-      "Gvdiffsplit",
-      "Gread",
-      "Gwrite",
-      "Ggrep",
-      "Glgrep",
-      "GMove",
-      "GDelete",
-      "Gbrowse",
-    },
-  },
-
-  {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     cmd = {
       "MasonToolsInstall",
