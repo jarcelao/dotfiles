@@ -5,3 +5,4 @@
 - DO use the following CLI tools whenever applicable:
     - `jq`
     - `rg`
+- NOTE that `git diff` is using `difftastic` as the diff tool.
