@@ -6,6 +6,7 @@ local ensure_installed = {
   { "ruff" },
   { "ty" },
   { "pgformatter" },
+  { "prettier" },
 }
 
 return ensure_installed

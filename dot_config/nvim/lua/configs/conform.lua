@@ -5,8 +5,8 @@ local options = {
     yaml = { "yq" },
     python = { "ruff_fix" },
     sql = { "pg_format" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
   },
 
   -- format_on_save = {
