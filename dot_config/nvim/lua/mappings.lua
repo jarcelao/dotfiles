@@ -67,22 +67,27 @@ require("which-key").add {
   { "<leader>bn", "<cmd>enew<CR>", desc = "buffer new" },
   { "<leader>b[", "<cmd>bprevious<CR>", desc = "buffer previous" },
   { "<leader>b]", "<cmd>bnext<CR>", desc = "buffer next" },
-  { "<leader>bd", "<cmd>bdelete|e#|bd#<CR>", desc = "buffer delete" },
-  { "<leader>bD", "<cmd>bdelete!|e#|bd#<CR>", desc = "buffer force delete" },
-  { "<leader>bo", "<cmd>%bdelete|e#|bd#<CR>", desc = "buffer close others" },
   {
-    "<leader>bp",
+    "<leader>bd",
     function()
-      require("nvchad.tabufline").pin_buf()
+      require("nvchad.tabufline").close_buffer()
     end,
-    desc = "buffer pin/unpin",
+    desc = "buffer delete",
   },
   {
-    "<leader>bP",
+    "<leader>bD",
     function()
-      require("nvchad.tabufline").close_unpinned_bufs()
+      local bufnr = vim.api.nvim_get_current_buf()
+      vim.cmd("bd! " .. bufnr)
     end,
-    desc = "buffer close unpinned",
+    desc = "buffer force delete",
+  },
+  {
+    "<leader>bo",
+    function()
+      require("nvchad.tabufline").closeAllBufs(false)
+    end,
+    desc = "buffer close others",
   },
   {
     "<leader>bL",
