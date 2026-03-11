@@ -66,7 +66,7 @@ This repo includes a script that automatically sets `difftastic` as the diff vie
   - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
 
 ### AI Coding Agent: `opencode`
-  - I use [opencode](https://opencode.ai) with [oh-my-opencode](https://github.com/code-yeongyu/oh-my-openagent) for my AI coding needs.
+  - I use [opencode](https://opencode.ai) for my AI coding needs.
 
 ### Terminal Utilities
 
