@@ -1,4 +1,1 @@
 README.md
-{{ if eq .chezmoi.os "darwin" }}
-.config/opencode
-{{ end }}

@@ -17,6 +17,9 @@ set -agF status-right "#{E:@catppuccin_status_battery}"
 {{ if eq .chezmoi.os "linux" }}
 set -g default-command "fish"
 {{ end }}
+set -g extended-keys on
+set -g extended-keys-format csi-u
+
 set -g @plugin "tmux-plugins/tpm"
 set -g @plugin "tmux-plugins/tmux-sensible"
 set -g @plugin "tmux-plugins/tmux-battery"

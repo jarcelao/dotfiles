@@ -51,6 +51,11 @@ Install the latest version of the [neovim editor](https://neovim.io/).
 
 This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
 
+### AI Agent: `pi`
+I use [pi](https://github.com/badlogic/pi-mono/) as my primary AI agent interface.
+
+This repo contains a custom `pi` configuration.
+
 ### Git: `lazygit` + `difft`
 
 Install both [lazygit](https://github.com/jesseduffield/lazygit) and [difftastic](https://difftastic.wilfred.me.uk/).
@@ -61,12 +66,6 @@ This repo includes a script that automatically sets `difftastic` as the diff vie
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
   - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
   - Regardless of host, I use [lazydocker](https://github.com/jesseduffield/lazydocker) to manage my containers.
-
-### Python: `uv`
-  - I use [uv](https://github.com/astral-sh/uv) as my primary Python interface.
-
-### AI Coding Agent: `opencode`
-  - I use [opencode](https://opencode.ai) for my AI coding needs.
 
 ### Terminal Utilities
 
