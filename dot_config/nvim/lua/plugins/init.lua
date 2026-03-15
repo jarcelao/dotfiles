@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = "BufWritePre", -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -21,9 +21,20 @@ return {
       "LazyGitFilter",
       "LazyGitFilterCurrentFile",
     },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      floating_window_use_plenary = 1,
+    },
     config = function()
       require("telescope").load_extension "lazygit"
     end,
+  },
+
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
   },
 
   {
