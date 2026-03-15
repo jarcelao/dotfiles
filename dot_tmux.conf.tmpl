@@ -14,9 +14,7 @@ set -agF status-right "#{E:@catppuccin_status_cpu}"
 set -ag status-right "#{E:@catppuccin_status_session}"
 set -ag status-right "#{E:@catppuccin_status_uptime}"
 set -agF status-right "#{E:@catppuccin_status_battery}"
-{{ if eq .chezmoi.os "linux" }}
-set -g default-command "fish"
-{{ end }}
+
 set -g extended-keys on
 set -g extended-keys-format csi-u
 

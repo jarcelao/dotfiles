@@ -22,7 +22,7 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 ## Applications
 
-Installing these applications depends on the OS and package manager. However, I tend to use [brew](https://brew.sh) to manage terminal packages.
+Installing these applications depends on the OS and package manager.
 
 ### Terminal Emulator: `wezterm`
 
@@ -52,6 +52,7 @@ Install the latest version of the [neovim editor](https://neovim.io/).
 This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
 
 ### AI Agent: `pi`
+
 I use [pi](https://github.com/badlogic/pi-mono/) as my primary AI agent interface.
 
 This repo contains a custom `pi` configuration.
