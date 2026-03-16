@@ -4,7 +4,7 @@ local ensure_installed = {
   { "stylua" },
   { "lua-language-server" },
   { "ruff" },
-  { "ty" },
+  { "basedpyright" },
   { "pgformatter" },
   { "prettier" },
   { "typescript-language-server" },
