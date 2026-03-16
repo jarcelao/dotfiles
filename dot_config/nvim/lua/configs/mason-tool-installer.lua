@@ -7,6 +7,7 @@ local ensure_installed = {
   { "ty" },
   { "pgformatter" },
   { "prettier" },
+  { "typescript-language-server" },
 }
 
 return ensure_installed
