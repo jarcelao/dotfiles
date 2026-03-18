@@ -26,17 +26,17 @@ Installing these applications depends on the OS and package manager.
 
 ### Terminal Emulator: `wezterm`
 
-Install the latest version of [wez's terminal emulator](https://wezterm.org/install/linux.html).
+Install [wez's terminal emulator](https://wezterm.org/install/linux.html).
 
 ### Shell: `fish`
 
-Install the latest version of the [fish shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
+Install the [fish shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
 
 [fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
 
 ### Terminal Multiplexer: `tmux`
 
-Install the latest version of the [tmux multiplexer](https://github.com/tmux/tmux).
+Install the [tmux multiplexer](https://github.com/tmux/tmux).
 
 > [!NOTE]
 > Install the following before launching `tmux`:
@@ -47,21 +47,19 @@ Install the latest version of the [tmux multiplexer](https://github.com/tmux/tmu
 
 ### Editor: `neovim`
 
-Install the latest version of the [neovim editor](https://neovim.io/). 
+Install the [neovim editor](https://neovim.io/). 
 
 This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
 
 ### AI Agent: `pi`
 
-I use [pi](https://github.com/badlogic/pi-mono/) as my primary AI agent interface.
+Install the [pi](https://github.com/badlogic/pi-mono/) AI agent.
 
 This repo contains a custom `pi` configuration.
 
-### Git: `lazygit` + `difft`
+### Git: `lazygit`
 
-Install both [lazygit](https://github.com/jesseduffield/lazygit) and [difftastic](https://difftastic.wilfred.me.uk/).
-
-This repo includes a script that automatically sets `difftastic` as the diff viewer.
+Install [lazygit](https://github.com/jesseduffield/lazygit).
 
 ### Dev Environments: `mise`
 
