@@ -38,6 +38,10 @@ if command -v nvim >/dev/null 2>&1
     alias n="nvim"
     set -gx EDITOR "nvim"
 end
+
+if command -v mise >/dev/null 2>&1
+  mise activate fish | source
+end
 {{ if eq .chezmoi.os "darwin" }}
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 

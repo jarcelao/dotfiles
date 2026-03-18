@@ -63,6 +63,10 @@ Install both [lazygit](https://github.com/jesseduffield/lazygit) and [difftastic
 
 This repo includes a script that automatically sets `difftastic` as the diff viewer.
 
+### Dev Environments: `mise`
+
+Install [mise-en-place](https://mise.jdx.dev/) which manages dev environments for projects.
+
 ### Docker: Rancher Desktop / Docker Engine
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
   - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
@@ -74,7 +78,6 @@ These are other utilities which are helpful for my daily tasks:
 
 - `bat`
 - `bottom`
-- `direnv`
 - `dua-cli`
 - `eza`
 - `fd`
