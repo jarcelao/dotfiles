@@ -1,4 +1,6 @@
 {
-  "lastChangelogVersion": "0.57.1",
-  "theme": "catppuccin-macchiato"
+  "lastChangelogVersion": "0.59.0",
+  "theme": "catppuccin-macchiato",
+  "defaultProvider": "openrouter",
+  "defaultModel": "moonshotai/kimi-k2.5"
 }
