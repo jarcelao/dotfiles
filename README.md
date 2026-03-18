@@ -38,7 +38,7 @@ Install the [fish shell](https://fishshell.com/).
 
 ### Shell Prompt: `starship`
 
-Install [starship](https://starship.rs) to get a pretty prompt.
+Install [starship](https://starship.rs).
 
 ### Terminal Multiplexer: `tmux`
 
@@ -59,19 +59,9 @@ This repo contains a custom neovim configuration based on [nvchad](https://githu
 
 ### AI Agent: `pi`
 
-Install the [pi](https://github.com/badlogic/pi-mono/) AI agent.
+Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes you have `npm` available.
 
-This repo contains a custom `pi` configuration.
-
-### Git: `lazygit`
-
-Install [lazygit](https://github.com/jesseduffield/lazygit).
-
-### Dev Environments: `mise`
-
-Install [mise-en-place](https://mise.jdx.dev/) which manages dev environments for projects.
-
-### Docker: Rancher Desktop / Docker Engine
+### Docker: Rancher Desktop / Docker Engine + Lazydocker
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
   - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
   - Regardless of host, I use [lazydocker](https://github.com/jesseduffield/lazydocker) to manage my containers.
@@ -80,17 +70,22 @@ Install [mise-en-place](https://mise.jdx.dev/) which manages dev environments fo
 
 These are other utilities which are helpful for my daily tasks:
 
-- `bat`
-- `bottom`
-- `dua-cli`
-- `eza`
-- `fd`
-- `fzf`
-- `jq`
-- `ripgrep`
-- `sevenzip`
-- `yazi`
-- `zoxide`
+- `bat` (pretty `cat` alternative)
+- `bottom` (task manager tui)
+- `dua-cli` (disk space manager tui)
+- `eza` (pretty `ls` alternative)
+- `fd` (fast `find` alternative)
+- `fzf` (fuzzy finder)
+- `gh` (github cli)
+- `jq` (JSON parser)
+- `lazygit` (git tui)
+- `mise` (dev env manager)
+- `npm` (js package manager)
+- `ripgrep` (fast `grep` alternative)
+- `sevenzip` (for compressed files)
+- `uv` (python package manager)
+- `yazi` (file explorer tui)
+- `zoxide` (fast `cd` alternative)
 
 ## Notes
 
