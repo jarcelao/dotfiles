@@ -30,9 +30,15 @@ Install [wez's terminal emulator](https://wezterm.org/install/linux.html).
 
 ### Shell: `fish`
 
-Install the [fish shell](https://fishshell.com/). Afterwards, install [starship](https://starship.rs) to get a pretty prompt.
+Install the [fish shell](https://fishshell.com/).
 
-[fisher](https://github.com/jorgebucaran/fisher) is also included with a bunch of plugins I use.
+> [!NOTE]
+> After applying the dotfiles, install [fisher](https://github.com/jorgebucaran/fisher). 
+> This should also install all included plugins. 
+
+### Shell Prompt: `starship`
+
+Install [starship](https://starship.rs) to get a pretty prompt.
 
 ### Terminal Multiplexer: `tmux`
 
