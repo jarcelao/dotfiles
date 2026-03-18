@@ -13,31 +13,6 @@ return {
   },
 
   {
-    "kdheepak/lazygit.nvim",
-    cmd = {
-      "LazyGit",
-      "LazyGitConfig",
-      "LazyGitCurrentFile",
-      "LazyGitFilter",
-      "LazyGitFilterCurrentFile",
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    opts = {
-      floating_window_use_plenary = 1,
-    },
-    config = function()
-      require("telescope").load_extension "lazygit"
-    end,
-  },
-
-  {
-    "f-person/git-blame.nvim",
-    event = "VeryLazy",
-  },
-
-  {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     cmd = {
       "MasonToolsInstall",
@@ -52,6 +27,33 @@ return {
   },
 
   {
+    "nvim-treesitter/nvim-treesitter",
+    event = { "BufReadPost", "BufNewFile" },
+    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
+    build = ":TSUpdate",
+    opts = require "configs.nvim-treesitter",
+  },
+
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+    config = function()
+      require("telescope").load_extension "lazygit"
+    end,
+  },
+
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
+  },
+
+  {
     "folke/which-key.nvim",
     lazy = false,
     opts = function()
@@ -60,14 +62,6 @@ return {
         delay = 0,
       }
     end,
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    event = { "BufReadPost", "BufNewFile" },
-    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
-    build = ":TSUpdate",
-    opts = require "configs.nvim-treesitter",
   },
 
   {
@@ -89,22 +83,9 @@ return {
   },
 
   {
-    "jvgrootveld/telescope-zoxide",
-    config = function()
-      require("telescope").load_extension "zoxide"
-    end,
-  },
-
-  {
-    "nanotee/zoxide.vim",
-    cmd = {
-      "Z",
-      "Lz",
-      "Tz",
-      "Zi",
-      "Lzi",
-      "Tzi",
-    },
+    "milanglacier/minuet-ai.nvim",
+    event = "VeryLazy",
+    opts = require "configs.minuet",
   },
 
   -- test new blink
