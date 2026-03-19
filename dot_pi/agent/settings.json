@@ -1,6 +1,10 @@
 {
-  "lastChangelogVersion": "0.59.0",
+  "lastChangelogVersion": "0.60.0",
   "theme": "catppuccin-macchiato",
   "defaultProvider": "openrouter",
-  "defaultModel": "moonshotai/kimi-k2.5"
+  "defaultModel": "moonshotai/kimi-k2.5",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "https://github.com/jarcelao/pi-exa-search@v1.0.0"
+  ]
 }
