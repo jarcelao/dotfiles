@@ -208,6 +208,19 @@ require("which-key").add {
     end,
     desc = "signature help",
   },
+  {
+    "<leader>cT",
+    function()
+      local bufnr = vim.api.nvim_get_current_buf()
+      if vim.diagnostic.is_enabled() then
+        vim.diagnostic.enable(false, { bufnr = bufnr })
+      else
+        vim.diagnostic.enable(true, { bufnr = bufnr })
+      end
+    end,
+    desc = "toggle diagnostics",
+  },
+  { "<leader>cv", "<cmd>Minuet virtualtext toggle<CR>", desc = "toggle minuet virtualtext" },
   { "<leader>c/", "gcc", desc = "toggle comment", remap = true },
 
   { "<leader>e", group = "Explorer" },
