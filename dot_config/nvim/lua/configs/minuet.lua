@@ -1,16 +1,6 @@
 return {
   virtualtext = {
-    auto_trigger_ft = {
-      "lua",
-      "python",
-      "javascript",
-      "typescript",
-      "bash",
-      "fish",
-      "sql",
-      "html",
-      "css",
-    },
+    auto_trigger_ft = {},
     keymap = {
       accept = "<A-A>",
       accept_line = "<A-a>",
