@@ -19,12 +19,12 @@ return {
     openai_compatible = {
       api_key = "OPENROUTER_API_KEY",
       end_point = "https://openrouter.ai/api/v1/chat/completions",
-      model = "google/gemini-3.1-flash-lite-preview",
+      model = "openai/gpt-oss-120b",
       name = "OpenRouter",
       optional = {
         max_tokens = 256,
         reasoning = {
-          effort = "none",
+          effort = "low",
         },
         provider = {
           -- Prioritize throughput for faster completion
