@@ -51,15 +51,17 @@ Install the [tmux multiplexer](https://github.com/tmux/tmux).
 >
 > Else the configuration will not load!
 
-### Editor: `neovim`
+### Editor: `code` / `vim`
 
-Install the [neovim editor](https://neovim.io/). 
+Install the latest version of [Visual Studio Code](https://code.visualstudio.com/).
 
-This repo contains a custom neovim configuration based on [nvchad](https://github.com/NvChad/NvChad).
+For now, I prefer using its native Settings Sync feature instead of tracking the dotfiles in this repo.
+
+For more lightweight editing tasks, this repo also contains a basic `vim` configuration.
 
 ### AI Agent: `pi`
 
-Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes you have `npm` available.
+Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes `npm` is installed.
 
 ### Docker: Rancher Desktop / Docker Engine + Lazydocker
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
