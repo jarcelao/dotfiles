@@ -40,17 +40,6 @@ Install the [fish shell](https://fishshell.com/).
 
 Install [starship](https://starship.rs).
 
-### Terminal Multiplexer: `tmux`
-
-Install the [tmux multiplexer](https://github.com/tmux/tmux).
-
-> [!NOTE]
-> Install the following before launching `tmux`:
->   - [tpm](https://github.com/tmux-plugins/tpm)
->   - [catppuccin](https://github.com/catppuccin/tmux)
->
-> Else the configuration will not load!
-
 ### Editor: `code` / `vim`
 
 Install the latest version of [Visual Studio Code](https://code.visualstudio.com/).
@@ -85,6 +74,7 @@ These are other utilities which are helpful for my daily tasks:
 - `npm` (js package manager)
 - `ripgrep` (fast `grep` alternative)
 - `sevenzip` (for compressed files)
+- `tmux` (terminal multiplexer)
 - `uv` (python package manager)
 - `yazi` (file explorer tui)
 - `zoxide` (fast `cd` alternative)
