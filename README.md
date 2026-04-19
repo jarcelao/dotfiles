@@ -36,10 +36,6 @@ Install the [fish shell](https://fishshell.com/).
 > After applying the dotfiles, install [fisher](https://github.com/jorgebucaran/fisher). 
 > This should also install all included plugins. 
 
-### Shell Prompt: `starship`
-
-Install [starship](https://starship.rs).
-
 ### Editor: `code` / `vim`
 
 Install the latest version of [Visual Studio Code](https://code.visualstudio.com/).
