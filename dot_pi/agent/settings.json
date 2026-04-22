@@ -1,10 +1,11 @@
 {
-  "lastChangelogVersion": "0.60.0",
+  "lastChangelogVersion": "0.68.1",
   "theme": "catppuccin-macchiato",
   "defaultProvider": "openrouter",
-  "defaultModel": "moonshotai/kimi-k2.5",
+  "defaultModel": "moonshotai/kimi-k2.6",
   "defaultThinkingLevel": "medium",
   "packages": [
-    "https://github.com/jarcelao/pi-exa-search@v1.0.0"
-  ]
+    "git:github.com/jarcelao/pi-exa-api"
+  ],
+  "hideThinkingBlock": false
 }
