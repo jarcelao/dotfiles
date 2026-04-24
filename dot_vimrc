@@ -1,27 +1,103 @@
-" general
-let mapleader = " "
-set mouse=a
-set clipboard=unnamedplus
+" Adapted from
+" https://github.com/tpope/vim-sensible
+
+" Disable vi compatibility
+set nocompatible
+
+" Better backspacing
+set backspace=indent,eol,start
+
+" Don't complete keywords in included files
+set complete-=i
+
+" Smart tab
+set smarttab
+
+" Don't use octal numbers
+set nrformats-=octal
+
+" Make escape more responsive
+set ttimeout
+set ttimeoutlen=100
+
+" Incremental search
+set incsearch
+
+" Use CTRL-L to clear highlights and update diff
+nnoremap <C-L> :nohlsearch<CR>:diffupdate<CR><C-L>
+
+" Status line
+set laststatus=2
+
+" Show ruler
+set ruler
+
+" Command-line completion
+set wildmenu
+
+" Scroll offset
+set scrolloff=1
+
+" Side scroll
+set sidescroll=1
+set sidescrolloff=2
+
+" Show as much as possible of the last line
+set display+=lastline
+set display+=truncate
+
+" List characters
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+
+" Delete comment character when joining
+set formatoptions+=j
+
+" Search for tags in all ancestor directories
+set tags^=./tags;
+
+" Auto read
+set autoread
+
+" History
+set history=1000
+
+" Tab page max
+set tabpagemax=50
+
+" Persist uppercase variables in viminfo
+set viminfo^=!
+
+" Don't save options in session/view files
+set sessionoptions-=options
+set viewoptions-=options
+
+" Enable bright colors
+if &t_Co == 8 && $TERM !~# '^Eterm'
+  set t_Co=16
+endif
+
+" Use bash for fish shell
+if &shell =~# 'fish$'
+  set shell=/usr/bin/env\ bash
+endif
+
+" Disable langremap
+set nolangremap
+
+" Filetype detection
+filetype plugin indent on
+
+" Syntax highlighting
 syntax enable
 
-" display
+" Display
 set number
-set relativenumber
 set termguicolors
 set statusline=%f\ %y\ %m\ %r\ %=\ %l:%c\ (%p%%)
 set laststatus=2
 colorscheme catppuccin_macchiato
 
-" indentation
-set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-set autoindent
-set smartindent
-
-" search
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
+" Other
+let mapleader = " "
+set mouse=a
+set clipboard=unnamedplus
