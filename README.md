@@ -36,13 +36,9 @@ Install the [fish shell](https://fishshell.com/).
 > After applying the dotfiles, install [fisher](https://github.com/jorgebucaran/fisher). 
 > This should also install all included plugins. 
 
-### Editor: `code` / `vim`
+### Editor: `vim`
 
-Install the latest version of [Visual Studio Code](https://code.visualstudio.com/).
-
-For now, I prefer using its native Settings Sync feature instead of tracking the dotfiles in this repo.
-
-For more lightweight editing tasks, this repo also contains a basic `vim` configuration.
+For lightweight editing tasks, this repo contains a basic `vim` configuration.
 
 ### AI Agent: `pi`
 
