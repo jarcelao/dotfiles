@@ -30,9 +30,9 @@ if test -d "$HOME/.local/bin"
     fish_add_path -g "$HOME/.local/bin"
 end
 
-if command -v vim >/dev/null 2>&1
-    alias v="vim"
-    set -gx EDITOR "vim"
+if command -v fresh >/dev/null 2>&1
+    alias f="fresh"
+    set -gx EDITOR "fresh"
 end
 
 if command -v mise >/dev/null 2>&1

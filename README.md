@@ -36,9 +36,9 @@ Install the [fish shell](https://fishshell.com/).
 > After applying the dotfiles, install [fisher](https://github.com/jorgebucaran/fisher). 
 > This should also install all included plugins. 
 
-### Editor: `vim`
+### Editor: `fresh`
 
-For lightweight editing tasks, this repo contains a basic `vim` configuration.
+Install the [fresh editor](https://getfresh.dev/).
 
 ### AI Agent: `pi`
 
