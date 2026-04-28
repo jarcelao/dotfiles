@@ -1,3 +1,9 @@
+os:
+  edit: fresh --cmd session open-file . {{filename}}
+  editAtLine: fresh --cmd session open-file . {{filename}}:{{line}}
+  editAtLineAndWait: fresh --cmd session open-file . {{filename}}:{{line}} --wait
+  editInTerminal: true
+
 theme:
   activeBorderColor:
     - '#b7bdf8'
