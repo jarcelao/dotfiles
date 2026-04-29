@@ -1,8 +1,8 @@
 {
-  "lastChangelogVersion": "0.68.1",
+  "lastChangelogVersion": "0.70.6",
   "theme": "catppuccin-macchiato",
   "defaultProvider": "openrouter",
-  "defaultModel": "moonshotai/kimi-k2.6",
+  "defaultModel": "minimax/minimax-m2.7",
   "defaultThinkingLevel": "medium",
   "packages": [
     "git:github.com/jarcelao/pi-exa-api"
