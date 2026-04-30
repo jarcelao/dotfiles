@@ -32,10 +32,6 @@ Install the [Warp terminal](https://warp.dev).
 
 Install the [fish shell](https://fishshell.com/).
 
-> [!NOTE]
-> After applying the dotfiles, install [fisher](https://github.com/jorgebucaran/fisher). 
-> This should also install all included plugins. 
-
 ### Editor: `fresh`
 
 Install the [fresh editor](https://getfresh.dev/).
