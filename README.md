@@ -28,9 +28,11 @@ Installing these applications depends on the OS and package manager.
 
 Install the [Warp terminal](https://warp.dev).
 
-### Shell: `fish`
+### Shell: `bash`
 
-Install the [fish shell](https://fishshell.com/).
+`bash` should likely be available by default.
+
+In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
 
 ### Editor: `fresh`
 

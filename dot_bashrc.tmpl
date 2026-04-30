@@ -1,0 +1,47 @@
+# Load machine-specific configurations
+if [ -d "$HOME/.bashrc.d" ]; then
+    for file in $HOME/.bashrc.d/*.sh; do
+        source "$file"
+    done
+fi
+
+# Commands to run in interactive sessions
+if [[ $- == *i* ]]; then
+    command -v eza >/dev/null 2>&1 && alias e="eza -lah"
+
+    if command -v bat >/dev/null 2>&1; then
+        alias b="bat"
+    elif command -v batcat >/dev/null 2>&1; then
+        alias b="batcat"
+    fi
+
+    if command -v zoxide >/dev/null 2>&1; then
+        eval "$(zoxide init bash)"
+    fi
+
+    y() {
+        local tmp
+        tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+        local cwd
+        command yazi "$@" --cwd-file="$tmp"
+        IFS= read -r cwd < "$tmp"
+        [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && cd -- "$cwd"
+        rm -f -- "$tmp"
+    }
+
+    if command -v fresh >/dev/null 2>&1; then
+        alias f="fresh"
+        export EDITOR="fresh"
+    fi
+
+    if command -v mise >/dev/null 2>&1; then
+        eval "$(mise activate bash)"
+    fi
+fi
+{{ if eq .chezmoi.os "darwin" }}
+export XDG_CONFIG_HOME="$HOME/.config"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jerichoarcelao/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+{{ end }}
