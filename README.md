@@ -24,9 +24,9 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing these applications depends on the OS and package manager.
 
-### Terminal Emulator: `wezterm`
+### Terminal Emulator: `warp`
 
-Install [wez's terminal emulator](https://wezterm.org/install/linux.html).
+Install the [Warp terminal](https://warp.dev).
 
 ### Shell: `fish`
 
