@@ -34,9 +34,9 @@ Install the [Warp terminal](https://warp.dev).
 
 In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
 
-### Editor: `fresh`
+### Editor: `helix`
 
-Install the [fresh editor](https://getfresh.dev/).
+Install the [helix editor](https://github.com/helix-editor/helix).
 
 ### AI Agent: `pi`
 

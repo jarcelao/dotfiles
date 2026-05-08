@@ -30,9 +30,8 @@ if [[ $- == *i* ]]; then
         rm -f -- "$tmp"
     }
 
-    if command -v fresh >/dev/null 2>&1; then
-        alias f="fresh"
-        export EDITOR="fresh"
+    if command -v hx >/dev/null 2>&1; then
+        export EDITOR="hx"
     fi
 
     if command -v mise >/dev/null 2>&1; then
