@@ -32,6 +32,10 @@ if [[ $- == *i* ]]; then
 
     if command -v hx >/dev/null 2>&1; then
         export EDITOR="hx"
+        alias h="hx"
+    elif command -v helix >/dev/null 2>&1; then
+        export EDITOR="helix"
+        alias h="helix"
     fi
 
     if command -v mise >/dev/null 2>&1; then
