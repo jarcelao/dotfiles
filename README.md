@@ -34,9 +34,9 @@ Install the [Warp terminal](https://warp.dev).
 
 In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
 
-### Editor: `helix`
+### Editor: `emacs`
 
-Install the [helix editor](https://github.com/helix-editor/helix).
+Install `emacs` first, then [spacemacs](https://www.spacemacs.org/) afterwards.
 
 ### AI Agent: `pi`
 

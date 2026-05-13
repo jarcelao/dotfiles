@@ -30,12 +30,9 @@ if [[ $- == *i* ]]; then
         rm -f -- "$tmp"
     }
 
-    if command -v hx >/dev/null 2>&1; then
-        export EDITOR="hx"
-        alias h="hx"
-    elif command -v helix >/dev/null 2>&1; then
-        export EDITOR="helix"
-        alias h="helix"
+    if command -v emacs >/dev/null 2>&1; then
+        export EDITOR="emacs"
+        alias em="emacs"
     fi
 
     if command -v mise >/dev/null 2>&1; then
