@@ -1,8 +1,8 @@
 {
-  "lastChangelogVersion": "0.70.6",
+  "lastChangelogVersion": "0.74.0",
   "theme": "catppuccin-macchiato",
   "defaultProvider": "openrouter",
-  "defaultModel": "minimax/minimax-m2.7",
+  "defaultModel": "xiaomi/mimo-v2.5",
   "defaultThinkingLevel": "medium",
   "packages": [
     "git:github.com/jarcelao/pi-exa-api"
