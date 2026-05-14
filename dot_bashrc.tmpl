@@ -7,28 +7,12 @@ fi
 
 # Commands to run in interactive sessions
 if [[ $- == *i* ]]; then
-    command -v eza >/dev/null 2>&1 && alias e="eza -lah"
-
-    if command -v bat >/dev/null 2>&1; then
-        alias b="bat"
-    elif command -v batcat >/dev/null 2>&1; then
-        alias b="batcat"
-    fi
+    alias l="ls -lah"
 
     if command -v zoxide >/dev/null 2>&1; then
         eval "$(zoxide init bash)"
         export _ZO_DOCTOR=0
     fi
-
-    y() {
-        local tmp
-        tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-        local cwd
-        command yazi "$@" --cwd-file="$tmp"
-        IFS= read -r cwd < "$tmp"
-        [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && cd -- "$cwd"
-        rm -f -- "$tmp"
-    }
 
     if command -v emacs >/dev/null 2>&1; then
         export EDITOR="emacs"

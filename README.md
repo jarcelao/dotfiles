@@ -42,28 +42,20 @@ Install `emacs` first, then [spacemacs](https://www.spacemacs.org/) afterwards.
 
 Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes `npm` is installed.
 
-### Docker: Rancher Desktop / Docker Engine + Lazydocker
+### Containers: Rancher Desktop / Docker Engine
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
   - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
-  - Regardless of host, I use [lazydocker](https://github.com/jesseduffield/lazydocker) to manage my containers.
 
 ### Terminal Utilities
 
 These are other utilities which are helpful for my daily tasks:
 
-- `bat` (pretty `cat` alternative)
-- `bottom` (task manager tui)
-- `dua-cli` (disk space manager tui)
-- `eza` (pretty `ls` alternative)
 - `fd` (fast `find` alternative)
 - `fzf` (fuzzy finder)
-- `hunk` (friendly git diff viewer)
 - `jq` (JSON parser)
-- `lazygit` (git tui)
 - `mise` (dev env manager)
 - `npm` (js package manager)
 - `ripgrep` (fast `grep` alternative)
-- `sevenzip` (for compressed files)
 - `uv` (python package manager)
 - `yazi` (file explorer tui)
 - `zoxide` (fast `cd` alternative)
