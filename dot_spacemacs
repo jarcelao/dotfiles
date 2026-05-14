@@ -47,9 +47,11 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom
+            shell-default-shell 'vterm
+            spacemacs-vterm-history-file-location "~/.bash_history")
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
@@ -229,8 +231,8 @@ It should only modify the values of Spacemacs settings."
    ;; fixed-pitch faces. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 10.0
+   dotspacemacs-default-font '("JetBrainsMono Nerd Font"
+                               :size 13.0
                                :weight normal
                                :width normal)
 
@@ -565,7 +567,7 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq catppuccin-flavor 'macchiato)
-  (mouse-wheel-mode 1)
+  (setq vterm-timer-delay 0.01)
   )
 
 (defun dotspacemacs/user-config ()
@@ -574,6 +576,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (mouse-wheel-mode 1)
   )
 
 
@@ -592,16 +595,17 @@ This function is called at the very end of Spacemacs initialization."
    '(package-selected-packages
      '(ace-link aggressive-indent all-the-icons auto-compile auto-highlight-symbol
                 avy-jump-helm-line catppuccin-theme centered-cursor-mode
-                clean-aindent-mode closql column-enforce-mode company
+                clean-aindent-mode closql code-review column-enforce-mode company
                 company-emoji define-word devdocs diminish dired-quick-sort
-                disable-mouse dotenv-mode drag-stuff dumb-jump edit-indirect
+                disable-mouse dotenv-mode drag-stuff dumb-jump eat edit-indirect
                 elisp-def elisp-demos elisp-slime-nav emacsql
-                emoji-cheat-sheet-plus emr eval-sexp-fu evil-anzu evil-args
-                evil-cleverparens evil-collection evil-easymotion evil-escape
-                evil-evilified-state evil-exchange evil-goggles evil-iedit-state
-                evil-indent-plus evil-lion evil-lisp-state evil-matchit evil-mc
-                evil-nerd-commenter evil-numbers evil-surround evil-textobj-line
-                evil-tutor evil-unimpaired evil-visual-mark-mode evil-visualstar
+                emoji-cheat-sheet-plus emr esh-help eshell-prompt-extras eshell-z
+                eval-sexp-fu evil-anzu evil-args evil-cleverparens evil-collection
+                evil-easymotion evil-escape evil-evilified-state evil-exchange
+                evil-goggles evil-iedit-state evil-indent-plus evil-lion
+                evil-lisp-state evil-matchit evil-mc evil-nerd-commenter
+                evil-numbers evil-surround evil-textobj-line evil-tutor
+                evil-unimpaired evil-visual-mark-mode evil-visualstar
                 expand-region eyebrowse fancy-battery forge gh-md ghub git-link
                 git-messenger git-modes git-timemachine gitignore-templates
                 golden-ratio google-translate helm-ag helm-comint helm-descbinds
@@ -610,15 +614,16 @@ This function is called at the very end of Spacemacs initialization."
                 highlight-numbers highlight-parentheses hl-todo holy-mode
                 hungry-delete hybrid-mode indent-guide info+ inspector link-hint
                 llama lorem-ipsum macrostep magit magit-section markdown-mode
-                markdown-toc multi-line nameless open-junk-file org org-superstar
-                overseer page-break-lines paradox password-generator pcre2el
-                popwin quickrun rainbow-delimiters restart-emacs smeargle
-                space-doc spaceline spacemacs-purpose-popwin
-                spacemacs-whitespace-cleanup string-edit-at-point
-                string-inflection symbol-overlay symon term-cursor toc-org
-                transient treemacs-evil treemacs-icons-dired treemacs-magit
-                treemacs-persp treemacs-projectile treepy undo-fu-session uuidgen
-                valign vi-tilde-fringe vmd-mode volatile-highlights vundo wgrep
+                markdown-toc multi-line multi-term multi-vterm nameless
+                open-junk-file org org-superstar overseer page-break-lines paradox
+                password-generator pcre2el popwin quickrun rainbow-delimiters
+                restart-emacs shell-pop smeargle space-doc spaceline
+                spacemacs-purpose-popwin spacemacs-whitespace-cleanup
+                string-edit-at-point string-inflection symbol-overlay symon
+                term-cursor terminal-here toc-org transient treemacs-evil
+                treemacs-icons-dired treemacs-magit treemacs-persp
+                treemacs-projectile treepy undo-fu-session uuidgen valign
+                vi-tilde-fringe vmd-mode volatile-highlights vterm vundo wgrep
                 winum with-editor writeroom-mode ws-butler yaml)))
   (custom-set-faces
    ;; custom-set-faces was added by Custom.
