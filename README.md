@@ -24,13 +24,13 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing these applications depends on the OS and package manager.
 
-### Terminal Emulator: `warp`
+### Terminal Emulator: `ghostty`
 
-Install the [Warp terminal](https://warp.dev).
+Install the [Ghostty terminal](https://ghostty.org).
 
 ### Shell: `bash`
 
-`bash` should likely be available by default.
+`bash` should likely be available by default. Installing [starship](https://starship.rs) also gives a pretty prompt.
 
 In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
 
