@@ -36,7 +36,7 @@ In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/
 
 ### Editor: `emacs`
 
-Install `emacs` first, then [spacemacs](https://www.spacemacs.org/) afterwards.
+Install `emacs` first, then [prelude](https://prelude.emacsredux.com/en/latest/) afterwards.
 
 ### AI Agent: `pi`
 
@@ -44,7 +44,7 @@ Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes `n
 
 ### Containers: Rancher Desktop / Docker Engine
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
-  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/). 
+  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/).
 
 ### Terminal Utilities
 
