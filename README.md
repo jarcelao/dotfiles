@@ -38,6 +38,10 @@ In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/
 
 Install `emacs` first, then [prelude](https://prelude.emacsredux.com/en/latest/) afterwards.
 
+> [!WARNING]
+> Install `prelude` first, bootstrap once, then run `M-x package-install RET catppuccin-theme RET` before applying the dotfiles!
+> Otherwrise, the bootstrap process will leave Emacs in a broken state.
+
 ### AI Agent: `pi`
 
 Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes `npm` is installed.
