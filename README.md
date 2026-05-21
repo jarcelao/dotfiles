@@ -57,11 +57,14 @@ These are other utilities which are helpful for my daily tasks:
 - `fd` (fast `find` alternative)
 - `fzf` (fuzzy finder)
 - `jq` (JSON parser)
+- `lazygit` (git tui)
 - `mise` (dev env manager)
+- `hunk` (git diff tui)
 - `npm` (js package manager)
 - `ripgrep` (fast `grep` alternative)
 - `uv` (python package manager)
 - `tmux` (terminal multiplexer)
+- `yazi` (file manager tui)
 - `zoxide` (fast `cd` alternative)
 
 ## Notes

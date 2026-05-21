@@ -22,6 +22,18 @@ if [[ $- == *i* ]]; then
         eval "$(starship init bash)"
     fi
 
+    if command -v lazygit >/dev/null 2>&1; then
+        alias lg="lazygit"
+    fi
+
+    function y() {
+        local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+        command yazi "$@" --cwd-file="$tmp"
+        IFS= read -r -d '' cwd < "$tmp"
+        [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+        command rm -f -- "$tmp"
+    }
+
     if command -v mise >/dev/null 2>&1; then
         eval "$(mise activate bash)"
     fi
