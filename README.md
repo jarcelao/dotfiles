@@ -34,13 +34,11 @@ Install the [Ghostty terminal](https://ghostty.org).
 
 In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
 
-### Editor: `emacs`
+### Editor: `nvim`
 
-Install `emacs` first, then [prelude](https://prelude.emacsredux.com/en/latest/) afterwards.
+Install the [neovim editor](https://neovim.io/).
 
-> [!WARNING]
-> Install `prelude` first, bootstrap once, then run `M-x package-install RET catppuccin-theme RET` before applying the dotfiles!
-> Otherwrise, the bootstrap process will leave Emacs in a broken state.
+This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
 ### AI Agent: `pi`
 

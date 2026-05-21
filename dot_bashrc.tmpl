@@ -9,9 +9,9 @@ fi
 if [[ $- == *i* ]]; then
     alias l="ls -lah"
 
-    if command -v emacs >/dev/null 2>&1; then
-        export EDITOR="emacs"
-        alias em="emacs"
+    if command -v nvim >/dev/null 2>&1; then
+        export EDITOR="nvim"
+        alias n="nvim"
     fi
 
     if command -v fzf >/dev/null 2>&1; then
