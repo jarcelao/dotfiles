@@ -57,7 +57,6 @@ These are other utilities which are helpful for my daily tasks:
 - `jq` (JSON parser)
 - `lazygit` (git tui)
 - `mise` (dev env manager)
-- `hunk` (git diff tui)
 - `npm` (js package manager)
 - `ripgrep` (fast `grep` alternative)
 - `uv` (python package manager)
