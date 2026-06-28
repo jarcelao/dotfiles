@@ -1,0 +1,13 @@
+{
+  "lastChangelogVersion": "0.80.2",
+  "theme": "catppuccin-macchiato",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "glm-5.2",
+  "defaultThinkingLevel": "high",
+  "packages": [
+    "npm:@ff-labs/pi-fff",
+    "npm:@jarcelao/pi-exa-api",
+    "npm:pi-memory"
+  ],
+  "hideThinkingBlock": false
+}
