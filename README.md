@@ -42,7 +42,13 @@ This repo contains a neovim configuration built on [AstroNvim](https://docs.astr
 
 ### AI Agent: `pi`
 
-Install the [pi AI agent](https://github.com/badlogic/pi-mono/). This assumes `npm` is installed.
+Install the [pi AI agent](https://pi.dev).
+
+This repo contains a global `.skill-lock.json` file. As of writing, the `skills` CLI does not have a global `experimental_install` command, so these global skills may need to be manually installed.
+
+### Agent Multiplexer: `herdr`
+
+Install the [herdr agent multiplexer](https://herdr.dev/).
 
 ### Containers: Rancher Desktop / Docker Engine
   - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
@@ -55,9 +61,10 @@ These are other utilities which are helpful for my daily tasks:
 - `fd` (fast `find` alternative)
 - `fzf` (fuzzy finder)
 - `jq` (JSON parser)
+- `hunk` (pretty diff viewer)
 - `lazygit` (git tui)
 - `mise` (dev env manager)
-- `npm` (js package manager)
+- `pnpm` (fast js package manager)
 - `ripgrep` (fast `grep` alternative)
 - `uv` (python package manager)
 - `tmux` (terminal multiplexer)
