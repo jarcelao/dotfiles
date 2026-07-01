@@ -8,7 +8,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- import/override with your plugins folder
