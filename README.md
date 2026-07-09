@@ -40,9 +40,9 @@ Install the [neovim editor](https://neovim.io/).
 
 This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
-### AI Agent: `pi`
+### AI Agent: `opencode`
 
-Install the [pi AI agent](https://pi.dev).
+Install the [OpenCode AI agent](https://opencode.ai/docs/).
 
 This repo contains a global `.skill-lock.json` file. As of writing, the `skills` CLI does not have a global `experimental_install` command, so these global skills may need to be manually installed.
 
