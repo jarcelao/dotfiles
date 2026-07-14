@@ -9,25 +9,8 @@ fi
 if [[ $- == *i* ]]; then
     alias l="ls -lah"
 
-    if command -v nvim >/dev/null 2>&1; then
-        export EDITOR="nvim"
-        alias n="nvim"
-    fi
-
     if command -v fzf >/dev/null 2>&1; then
         eval "$(fzf --bash)"
-    fi
-
-    if command -v starship >/dev/null 2>&1; then
-        eval "$(starship init bash)"
-    fi
-
-    if command -v lazygit >/dev/null 2>&1; then
-        alias lg="lazygit"
-    fi
-
-    if command -v opencode >/dev/null 2>&1; then
-        export OPENCODE_ENABLE_EXA=1
     fi
 
     function y() {
@@ -45,6 +28,23 @@ if [[ $- == *i* ]]; then
     if command -v zoxide >/dev/null 2>&1; then
         eval "$(zoxide init bash)"
         export _ZO_DOCTOR=0
+    fi
+
+    if command -v starship >/dev/null 2>&1; then
+        eval "$(starship init bash)"
+    fi
+
+    if command -v lazygit >/dev/null 2>&1; then
+        alias lg="lazygit"
+    fi
+
+   if command -v nvim >/dev/null 2>&1; then
+        export EDITOR="nvim"
+        alias n="nvim"
+    fi
+
+    if command -v opencode >/dev/null 2>&1; then
+        export OPENCODE_ENABLE_EXA=1
     fi
 fi
 {{ if eq .chezmoi.os "darwin" }}
