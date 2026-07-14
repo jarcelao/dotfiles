@@ -46,8 +46,6 @@ This repo contains a neovim configuration built on [AstroNvim](https://docs.astr
 
 Install the [OpenCode AI agent](https://opencode.ai/docs/).
 
-This repo contains a global `.skill-lock.json` file. As of writing, the `skills` CLI does not have a global `experimental_install` command, so these global skills may need to be manually installed.
-
 ### Agent Multiplexer: `herdr`
 
 Install the [herdr agent multiplexer](https://herdr.dev/).
