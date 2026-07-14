@@ -30,9 +30,11 @@ Install the [Ghostty terminal](https://ghostty.org).
 
 ### Shell: `bash`
 
-`bash` should likely be available by default. Installing [starship](https://starship.rs) also gives a pretty prompt.
+`bash` should likely be available by default.
 
 In this config, `~/.bashrc` contains general configurations, while `~/.bashrc.d/` contains machine-specific ones.
+
+On top of `bash`, I use [flyline](https://github.com/HalFrgrd/flyline) for a fish-like experience and [starship](https://starship.rs) for a pretty prompt. Ensure that these tools are available before applying the dotfiles.
 
 ### Editor: `nvim`
 
