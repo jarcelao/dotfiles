@@ -9,10 +9,6 @@ fi
 if [[ $- == *i* ]]; then
     alias l="ls -lah"
 
-    if command -v fzf >/dev/null 2>&1; then
-        eval "$(fzf --bash)"
-    fi
-
     function y() {
         local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
         command yazi "$@" --cwd-file="$tmp"
