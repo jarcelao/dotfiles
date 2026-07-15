@@ -67,7 +67,6 @@ These are other utilities which are helpful for my daily tasks:
 - `pnpm` (fast js package manager)
 - `ripgrep` (fast `grep` alternative)
 - `uv` (python package manager)
-- `tmux` (terminal multiplexer)
 - `yazi` (file manager tui)
 - `zoxide` (fast `cd` alternative)
 
