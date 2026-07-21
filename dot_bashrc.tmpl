@@ -43,8 +43,3 @@ if [[ $- == *i* ]]; then
         export OPENCODE_ENABLE_EXA=1
     fi
 fi
-{{ if eq .chezmoi.os "darwin" }}
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/jerichoarcelao/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-{{ end }}

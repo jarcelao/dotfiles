@@ -50,10 +50,6 @@ Install the [OpenCode AI agent](https://opencode.ai/docs/).
 
 Install the [herdr agent multiplexer](https://herdr.dev/).
 
-### Containers: Rancher Desktop / Docker Engine
-  - On non-Linux hosts, I use [Rancher Desktop](https://rancherdesktop.io/).
-  - On Linux hosts, I use [Docker Engine](https://docs.docker.com/engine/).
-
 ### Terminal Utilities
 
 These are other utilities which are helpful for my daily tasks:
