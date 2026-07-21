@@ -42,9 +42,9 @@ Install the [neovim editor](https://neovim.io/).
 
 This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
-### AI Agent: `opencode`
+### AI Agent: `codex`
 
-Install the [OpenCode AI agent](https://opencode.ai/docs/).
+Install OpenAI's [Codex AI agent](https://opencode.ai/docs/).
 
 ### Agent Multiplexer: `herdr`
 

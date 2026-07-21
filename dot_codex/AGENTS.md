@@ -1,5 +1,5 @@
 ## Rules
-- Use `uv` for any Python-related tasks.
+- Always use `uv` to run Python code.
   - For ad-hoc CLI execution, use `uvx`
   - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata
-- Write temporary files to a `$(cwd)/temp/` folder.
+- Write temporary files to a `$(pwd)/temp/` folder.
