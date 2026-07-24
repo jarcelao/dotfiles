@@ -44,7 +44,7 @@ This repo contains a neovim configuration built on [AstroNvim](https://docs.astr
 
 ### AI Agent: `codex`
 
-Install OpenAI's [Codex AI agent](https://opencode.ai/docs/).
+Install OpenAI's [Codex AI agent](https://github.com/openai/codex).
 
 ### Agent Multiplexer: `herdr`
 
