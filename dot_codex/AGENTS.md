@@ -1,4 +1,4 @@
-## Rules
+- Write all prose in ASD-STE100 Simplified Technical English
 - Always use `uv` to run Python code.
   - For ad-hoc CLI execution, use `uvx`
   - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata
