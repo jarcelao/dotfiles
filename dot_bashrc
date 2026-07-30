@@ -7,8 +7,6 @@ fi
 
 # Commands to run in interactive sessions
 if [[ $- == *i* ]]; then
-    alias l="ls -lah"
-
     function y() {
         local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
         command yazi "$@" --cwd-file="$tmp"

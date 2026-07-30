@@ -54,6 +54,8 @@ Install the [herdr agent multiplexer](https://herdr.dev/).
 
 These are other utilities which are helpful for my daily tasks:
 
+- `bat` (pretty `cat` alternative)
+- `eza` (pretty `ls` alternative)
 - `fd` (fast `find` alternative)
 - `fzf` (fuzzy finder)
 - `jq` (JSON parser)
@@ -64,7 +66,7 @@ These are other utilities which are helpful for my daily tasks:
 - `ripgrep` (fast `grep` alternative)
 - `uv` (python package manager)
 - `yazi` (file manager tui)
-- `zoxide` (fast `cd` alternative)
+- `zoxide` (convenient `cd` alternative)
 
 ## Notes
 
