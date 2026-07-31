@@ -4,4 +4,6 @@
   - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata
 - Use `pnpm` to run JavaScript code.
   - For ad-hoc CLI execution, use `pnpx`
+- Do not specify version markers when adding external dependencies. 
+  - Use the latest versions instead.
 - Write temporary files to a `$(pwd)/temp/` folder.
