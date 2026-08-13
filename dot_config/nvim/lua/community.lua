@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.git.codediff-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- import/override with your plugins folder
