@@ -1,9 +1,8 @@
-- Write turn output prose in ASD-STE100 Simplified Technical English
+- Write all prose following ASD-STE100.
 - Use `uv` to run Python code.
-  - For ad-hoc CLI execution, use `uvx`
-  - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata
+  - For ad-hoc scripts, use `uv run`
+  - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata.
 - Use `pnpm` to run JavaScript code.
-  - For ad-hoc CLI execution, use `pnpx`
 - Do not specify version markers when adding external dependencies. 
   - Use the latest versions instead.
 - Write temporary files to a `$(pwd)/temp/` folder.
