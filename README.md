@@ -64,7 +64,7 @@ These are other utilities which are helpful for my daily tasks:
 - `mise` (dev env manager)
 - `pnpm` (fast js package manager)
 - `ripgrep` (fast `grep` alternative)
-- `superfile` (file manager tui)
+- `yazi` (file manager tui)
 - `uv` (python package manager)
 - `zoxide` (convenient `cd` alternative)
 
