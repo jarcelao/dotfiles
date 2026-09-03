@@ -59,6 +59,7 @@ These are other utilities which are helpful for my daily tasks:
 - `fd` (fast `find` alternative)
 - `fzf` (fuzzy finder)
 - `gh` (github cli)
+- `hunk` (diff viewer)
 - `jq` (JSON parser)
 - `lazygit` (git tui)
 - `mise` (dev env manager)
