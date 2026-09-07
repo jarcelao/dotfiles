@@ -1,4 +1,5 @@
 - Write all prose following ASD-STE100.
+  - Also make sure each word justifies its existence.
 - Use `uv` to run Python code.
   - For ad-hoc scripts, use `uv run`
   - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata.
