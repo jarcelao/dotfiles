@@ -40,11 +40,11 @@ Install the [neovim editor](https://neovim.io/).
 
 This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
-### AI Agent: `codex` / `omp`
+### AI Agent: `codex` / `amp`
 
-Install the [Codex](https://github.com/openai/codex) and [oh-my-pi](https://github.com/can1357/oh-my-pi) AI agents.
+Install the [Codex](https://openai.com/codex/) and [amp](https://ampcode.com) AI agents.
 
-Codex is used as a daily driver with OpenAI models. OMP is for more experimental use cases.
+Codex is used as a daily driver with OpenAI models. Amp is an alternative driver.
 
 ### Agent Multiplexer: `herdr`
 
