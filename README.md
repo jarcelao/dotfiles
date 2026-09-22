@@ -74,3 +74,11 @@ These are other utilities which are helpful for my daily tasks:
 ### Visuals
   - My preferred [Nerd Font](https://www.nerdfonts.com/) is JetBrains Mono.
   - My preferred color scheme is [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin).
+
+### Agent Skills
+
+The following are agent skills I use in my daily work. These can be installed with `pnpx skills add` or the corresponding harness plugin, if available:
+
+- [mattpocock/skills](https://github.com/mattpocock/skills)
+- [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+- [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
