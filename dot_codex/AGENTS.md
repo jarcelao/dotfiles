@@ -1,9 +1,7 @@
-- In all prose, make sure each word justifies its existence.
 - When writing Markdown, do not use line breaks inside a paragraph.
 - Use `uv` to run Python code.
   - For ad-hoc scripts, use `uv run`
-  - For external dependencies to ad-hoc scripts, use `uv run --with` or PEP 723 inline metadata.
+  - For external dependencies to ad-hoc scripts, use PEP 723 inline metadata.
 - Use `pnpm` to run JavaScript code.
-- Do not specify version markers when adding external dependencies. 
-  - Use the latest versions instead.
+- Do not specify version markers when adding external dependencies. Use the latest versions instead.
 - Write temporary files to a `$(pwd)/temp/` folder.
