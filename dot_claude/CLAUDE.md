@@ -1,4 +1,3 @@
-- When writing Markdown, do not use line breaks inside a paragraph.
 - Use `uv` to run Python code.
   - For ad-hoc scripts, use `uv run`
   - For external dependencies to ad-hoc scripts, use PEP 723 inline metadata.

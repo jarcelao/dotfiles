@@ -40,11 +40,9 @@ Install the [neovim editor](https://neovim.io/).
 
 This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
-### AI Agent: `codex` / `amp`
+### AI Agent: `claude`
 
-Install the [Codex](https://openai.com/codex/) and [amp](https://ampcode.com) AI agents.
-
-Codex is used as a daily driver with OpenAI models. Amp is an alternative driver.
+Install the [Claude Code harness](https://claude.com/product/claude-code). 
 
 ### Agent Multiplexer: `herdr`
 
