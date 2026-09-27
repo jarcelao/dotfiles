@@ -79,4 +79,4 @@ The following are agent skills I use in my daily work. These can be installed wi
 
 - [mattpocock/skills](https://github.com/mattpocock/skills)
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-- [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+- [blader/humanizer](https://github.com/blader/humanizer)
