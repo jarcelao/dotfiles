@@ -79,3 +79,4 @@ The following are agent skills I use in my daily work. These can be installed wi
 
 - [mattpocock/skills](https://github.com/mattpocock/skills)
 - [pstack](https://github.com/cursor/plugins/tree/main/pstack) via [michael-denyer/pstack-claude](https://github.com/michael-denyer/pstack-claude)
+- [blader/humanizer](https://github.com/blader/humanizer)
