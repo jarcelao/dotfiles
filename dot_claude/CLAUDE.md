@@ -1,8 +1,0 @@
-- Use `uv` to run Python code.
-  - For ad-hoc scripts, use `uv run`
-  - For external dependencies to ad-hoc scripts, use PEP 723 inline metadata.
-- Use `pnpm` to run JavaScript code.
-- Do not specify version markers when adding external dependencies. Use the latest versions instead.
-- Write temporary files to a `$(pwd)/tmp/` folder.
-
-@~/.claude/pstack-models.md

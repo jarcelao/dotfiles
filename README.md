@@ -40,9 +40,9 @@ Install the [neovim editor](https://neovim.io/).
 
 This repo contains a neovim configuration built on [AstroNvim](https://docs.astronvim.com/).
 
-### AI Agent: `claude`
+### AI Agent: `cursor`
 
-Install the [Claude Code harness](https://claude.com/product/claude-code). 
+Install the [Cursor agent harness](https://cursor.com/).
 
 ### Agent Multiplexer: `herdr`
 
