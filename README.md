@@ -77,6 +77,5 @@ These are other utilities which are helpful for my daily tasks:
 
 The following are agent skills I use in my daily work. These can be installed with `pnpx skills add` or the corresponding harness plugin, if available:
 
-- [mattpocock/skills](https://github.com/mattpocock/skills)
 - [pstack](https://github.com/cursor/plugins/tree/main/pstack)
 - [blader/humanizer](https://github.com/blader/humanizer)
