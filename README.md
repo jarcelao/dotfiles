@@ -24,9 +24,9 @@ For more details, see the [quick start guide](https://www.chezmoi.io/quick-start
 
 Installing these applications depends on the OS and package manager.
 
-### Terminal Emulator: `ghostty`
+### Terminal: `rex`
 
-Install the [Ghostty terminal](https://ghostty.org).
+Install the [Rex terminal](https://www.superlogical.com/rex/docs/installation).
 
 ### Shell: `fish`
 
@@ -43,10 +43,6 @@ This repo contains a neovim configuration built on [AstroNvim](https://docs.astr
 ### AI Agent: `cursor`
 
 Install the [Cursor agent harness](https://cursor.com/).
-
-### Agent Multiplexer: `herdr`
-
-Install the [herdr agent multiplexer](https://herdr.dev/).
 
 ### Terminal Utilities
 
